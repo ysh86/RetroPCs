@@ -346,6 +346,7 @@ set_global_assignment -name QIP_FILE ../txtpramh.qip
 set_global_assignment -name VHDL_FILE ../ramreg.vhd
 set_global_assignment -name VHDL_FILE ../../USART/txframe.vhd
 set_global_assignment -name VHDL_FILE ../../USART/rxframe.vhd
+set_global_assignment -name VHDL_FILE ../../USART/txframenb.vhd
 set_global_assignment -name VHDL_FILE ../../sound/adpcm6258/tbl6258.vhd
 set_global_assignment -name VHDL_FILE ../../sound/adpcm6258/e6258.vhd
 set_global_assignment -name MIF_FILE ../../sound/adpcm6258/tbl6258.mif
