@@ -1,0 +1,399 @@
+Restore Archived Project report for release-de0cvdemu2
+Fri Oct 31 16:17:54 2025
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Oct 31 16:17:54 2025 ;
+; Revision Name                   ; release-de0cvdemu2                    ;
+; Top-level Entity Name           ; S88DE0CVDEMU2                         ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/D/FPGA/release-de0cvdemu2.200526.qar' into the 'C:/D/FPGA/release-de0cvdemu2.200526_restored/' directory
+Info: Generated report 'release-de0cvdemu2.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 114 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Fri Oct 31 16:17:55 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+
++---------------------------------------------------------------------------+
+; Files Restored                                                            ;
++---------------------------------------------------------------------------+
+; File Name                                                                 ;
++---------------------------------------------------------------------------+
+; CPU/T80/T80.vhd                                                           ;
+; CPU/T80/T80_ALU.vhd                                                       ;
+; CPU/T80/T80_MCode.vhd                                                     ;
+; CPU/T80/T80_Pack.vhd                                                      ;
+; CPU/T80/T80_Reg.vhd                                                       ;
+; CPU/T80/T80a.vhd                                                          ;
+; FDC/FDC_sectinfo.vhd                                                      ;
+; FDC/FDC_timing.vhd                                                        ;
+; FDC/FDCs.vhd                                                              ;
+; FDC/MTsave.vhd                                                            ;
+; FDC/dc2ry.vhd                                                             ;
+; FDC/fmdem.vhd                                                             ;
+; FDC/fmmod.vhd                                                             ;
+; FDC/headseek.vhd                                                          ;
+; FDC/mfmdem.vhd                                                            ;
+; FDC/mfmmod.vhd                                                            ;
+; FDC/nrdet.vhd                                                             ;
+; I2C/I2CIF.vhd                                                             ;
+; I2C/I2C_pkg.vhd                                                           ;
+; LIB/CRCGENN.vhd                                                           ;
+; LIB/HEX2SEG.vhd                                                           ;
+; LIB/HEX2SEGn.vhd                                                          ;
+; LIB/PARGEN.vhd                                                            ;
+; LIB/PARITYG.vhd                                                           ;
+; LIB/addsat.vhd                                                            ;
+; LIB/average.vhd                                                           ;
+; LIB/clkdiv.vhd                                                            ;
+; LIB/clktx.vhd                                                             ;
+; LIB/delayer.vhd                                                           ;
+; LIB/deltasigmadac.vhd                                                     ;
+; LIB/digifilter.vhd                                                        ;
+; LIB/digifilters.vhd                                                       ;
+; LIB/e8255.vhd                                                             ;
+; LIB/g_srff.vhd                                                            ;
+; LIB/intchk.vhd                                                            ;
+; LIB/multi.vhd                                                             ;
+; LIB/sftclk.vhd                                                            ;
+; LIB/sftdiv.vhd                                                            ;
+; LIB/sftgen.vhd                                                            ;
+; LIB/sftmul.vhd                                                            ;
+; LIB/shiftadd.vhd                                                          ;
+; LIB/signext.vhd                                                           ;
+; LIB/ssmult.vhd                                                            ;
+; LIB/susftmul.vhd                                                          ;
+; LIB/susmult.vhd                                                           ;
+; LIB/unchchata.vhd                                                         ;
+; CMT/cmtdem.vhd                                                            ;
+; CMT/cmtmod.vhd                                                            ;
+; CPUtest.cof                                                               ;
+; Cyc5/asmicont.vhd                                                         ;
+; Cyc5/pllCV.cmp                                                            ;
+; Cyc5/pllCV.qip                                                            ;
+; Cyc5/pllCV.vhd                                                            ;
+; Cyc5/pllCV/pllCV_0002.qip                                                 ;
+; Cyc5/pllCV/pllCV_0002.v                                                   ;
+; Cyc5/pllCVdemu.cmp                                                        ;
+; Cyc5/pllCVdemu.qip                                                        ;
+; Cyc5/pllCVdemu.sip                                                        ;
+; Cyc5/pllCVdemu.spd                                                        ;
+; Cyc5/pllCVdemu.vhd                                                        ;
+; Cyc5/pllCVdemu/pllCVdemu_0002.qip                                         ;
+; Cyc5/pllCVdemu/pllCVdemu_0002.v                                           ;
+; Cyc5/pllCVdemu_sim/pllCVdemu.vho                                          ;
+; Cyc5/romcopy.vhd                                                          ;
+; Doc/ROM_address.xls                                                       ;
+; Doc/keymap.xls                                                            ;
+; Doc/pin-assign_DE0.xls                                                    ;
+; Doc/readme.txt                                                            ;
+; EDIDmon.vhd                                                               ;
+; FDtiming.vhd                                                              ;
+; FECcont.vhd                                                               ;
+; Font/fontram.cmp                                                          ;
+; Font/fontram.qip                                                          ;
+; Font/fontram.vhd                                                          ;
+; Font/graphfont.bin                                                        ;
+; HDMI/LVDStrans.bsf                                                        ;
+; HDMI/LVDStrans.cmp                                                        ;
+; HDMI/LVDStrans.inc                                                        ;
+; HDMI/LVDStrans.ppf                                                        ;
+; HDMI/LVDStrans.qip                                                        ;
+; HDMI/LVDStrans.vhd                                                        ;
+; HDMI/LVDStrans_inst.vhd                                                   ;
+; HDMI/hdmiconv.vhd                                                         ;
+; HDMI/hdmipll.cmp                                                          ;
+; HDMI/hdmipll.qip                                                          ;
+; HDMI/hdmipll.vhd                                                          ;
+; HDMI/hdmipll/hdmipll_0002.qip                                             ;
+; HDMI/hdmipll/hdmipll_0002.v                                               ;
+; INTCONTS.vhd                                                              ;
+; IO_DETAC.vhd                                                              ;
+; IO_RD.vhd                                                                 ;
+; IO_RDB.vhd                                                                ;
+; IO_RW.vhd                                                                 ;
+; IO_RWS.vhd                                                                ;
+; IO_WR.vhd                                                                 ;
+; IO_WRB.vhd                                                                ;
+; IO_WRS.vhd                                                                ;
+; KANJIROM.vhd                                                              ;
+; PC80.cof                                                                  ;
+; PC88.cof                                                                  ;
+; PC88M.cof                                                                 ;
+; PC88P.cof                                                                 ;
+; PC88P2.cof                                                                ;
+; PC88top.cof                                                               ;
+; PS2KB/KBIF.vhd                                                            ;
+; PS2KB/KBIO.qip                                                            ;
+; PS2KB/KBIO.vhd                                                            ;
+; PS2KB/KBMAP.vhd                                                           ;
+; PS2KB/KBTBLE0.qip                                                         ;
+; PS2KB/KBTBLE0.vhd                                                         ;
+; PS2KB/KBTBLN.qip                                                          ;
+; PS2KB/KBTBLN.vhd                                                          ;
+; PS2KB/kbtble0.hex                                                         ;
+; PS2KB/kbtbln.hex                                                          ;
+; RAMCLR.vhd                                                                ;
+; S88DE0CVDEMU2.vhd                                                         ;
+; SUBunit/INTSUB.vhd                                                        ;
+; SUBunit/SUBunitsDEMU2.vhd                                                 ;
+; SUBunit/mmapsub.vhd                                                       ;
+; SUBunit/subrom.vhd                                                        ;
+; TDMAREGS.vhd                                                              ;
+; TEXTRAM.cmp                                                               ;
+; TEXTRAM.qip                                                               ;
+; TEXTRAM.vhd                                                               ;
+; addressmap_DE0CV_pkg.vhd                                                  ;
+; memorymaps.vhd                                                            ;
+; palette.vhd                                                               ;
+; rampalette.vhd                                                            ;
+; sdramcde0cvDEMU2.vhd                                                      ;
+; trammaps.vhd                                                              ;
+; PC88DE0.cof                                                               ;
+; PC88DE0.qsf                                                               ;
+; PC88DE0CV.cof                                                             ;
+; PC88DE0CV.qsf                                                             ;
+; PC88DE0CV_DEMU.qsf                                                        ;
+; PC88DE0CV_DEMU2.qsf                                                       ;
+; PC88TOP.qpf                                                               ;
+; cpumon.stp                                                                ;
+; db/ip/diskemu/diskemu.v                                                   ;
+; db/ip/diskemu/submodules/altera_avalon_sc_fifo.v                          ;
+; db/ip/diskemu/submodules/altera_avalon_st_clock_crosser.v                 ;
+; db/ip/diskemu/submodules/altera_avalon_st_handshake_clock_crosser.v       ;
+; db/ip/diskemu/submodules/altera_avalon_st_pipeline_base.v                 ;
+; db/ip/diskemu/submodules/altera_merlin_address_alignment.sv               ;
+; db/ip/diskemu/submodules/altera_merlin_arbitrator.sv                      ;
+; db/ip/diskemu/submodules/altera_merlin_burst_adapter.sv                   ;
+; db/ip/diskemu/submodules/altera_merlin_burst_uncompressor.sv              ;
+; db/ip/diskemu/submodules/altera_merlin_master_agent.sv                    ;
+; db/ip/diskemu/submodules/altera_merlin_master_translator.sv               ;
+; db/ip/diskemu/submodules/altera_merlin_slave_agent.sv                     ;
+; db/ip/diskemu/submodules/altera_merlin_slave_translator.sv                ;
+; db/ip/diskemu/submodules/altera_merlin_width_adapter.sv                   ;
+; db/ip/diskemu/submodules/altera_reset_controller.sdc                      ;
+; db/ip/diskemu/submodules/altera_reset_controller.v                        ;
+; db/ip/diskemu/submodules/altera_reset_synchronizer.v                      ;
+; db/ip/diskemu/submodules/diskemu_FDRAM.hex                                ;
+; db/ip/diskemu/submodules/diskemu_FDRAM.v                                  ;
+; db/ip/diskemu/submodules/diskemu_fdcpy_busy.v                             ;
+; db/ip/diskemu/submodules/diskemu_fdcpy_emunit.v                           ;
+; db/ip/diskemu/submodules/diskemu_fdcpy_fdmode.v                           ;
+; db/ip/diskemu/submodules/diskemu_fddsel.v                                 ;
+; db/ip/diskemu/submodules/diskemu_fdwgate.v                                ;
+; db/ip/diskemu/submodules/diskemu_irq_mapper.sv                            ;
+; db/ip/diskemu/submodules/diskemu_jtag_uart_0.v                            ;
+; db/ip/diskemu/submodules/diskemu_kbfifo.v                                 ;
+; db/ip/diskemu/submodules/diskemu_mainmem.hex                              ;
+; db/ip/diskemu/submodules/diskemu_mainmem.v                                ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0.v                      ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_addr_router.sv         ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_addr_router_001.sv     ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_cmd_xbar_demux.sv      ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_cmd_xbar_demux_001.sv  ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_cmd_xbar_mux.sv        ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_cmd_xbar_mux_002.sv    ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_cmd_xbar_mux_045.sv    ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_id_router.sv           ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_id_router_002.sv       ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_id_router_017.sv       ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_id_router_020.sv       ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_id_router_045.sv       ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_rsp_xbar_demux_002.sv  ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_rsp_xbar_demux_045.sv  ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_rsp_xbar_mux.sv        ;
+; db/ip/diskemu/submodules/diskemu_mm_interconnect_0_rsp_xbar_mux_001.sv    ;
+; db/ip/diskemu/submodules/diskemu_model.v                                  ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0.sdc                         ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0.v                           ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_jtag_debug_module_sysclk.v  ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_jtag_debug_module_tck.v     ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_jtag_debug_module_wrapper.v ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_oci_test_bench.v            ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_ociram_default_contents.mif ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_rf_ram_a.mif                ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_rf_ram_b.mif                ;
+; db/ip/diskemu/submodules/diskemu_nios2_qsys_0_test_bench.v                ;
+; db/ip/diskemu/submodules/diskemu_nvsram.v                                 ;
+; db/ip/diskemu/submodules/diskemu_pio_FDEJECT.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_FDINDISK.v                           ;
+; db/ip/diskemu/submodules/diskemu_pio_FDMOTOR.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_FDRAMADDR.v                          ;
+; db/ip/diskemu/submodules/diskemu_pio_FDRAMBUSY.v                          ;
+; db/ip/diskemu/submodules/diskemu_pio_FDRAMRD.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_FDSEL0.v                             ;
+; db/ip/diskemu/submodules/diskemu_pio_FDSEL1.v                             ;
+; db/ip/diskemu/submodules/diskemu_pio_FDWROTE.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_NVSAVE.v                             ;
+; db/ip/diskemu/submodules/diskemu_pio_SASIACK.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_SASIBSY.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_SASICD.v                             ;
+; db/ip/diskemu/submodules/diskemu_pio_SASIIN.v                             ;
+; db/ip/diskemu/submodules/diskemu_pio_SASIOUT.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_SASISEL.v                            ;
+; db/ip/diskemu/submodules/diskemu_pio_SDCS.v                               ;
+; db/ip/diskemu/submodules/diskemu_spi_fast.v                               ;
+; db/ip/diskemu/submodules/diskemu_spi_slow.v                               ;
+; db/ip/diskemu/submodules/diskemu_sysid.v                                  ;
+; db/ip/diskemu/submodules/diskemu_txt_cursorC.v                            ;
+; db/ip/diskemu/submodules/diskemu_txt_cursorL.v                            ;
+; db/ip/diskemu/submodules/diskemu_vram.hex                                 ;
+; db/ip/diskemu/submodules/diskemu_vram.v                                   ;
+; db/release-de0cvdemu2.cmp.hdb                                             ;
+; db/release-de0cvdemu2.db_info                                             ;
+; incremental_db/compiled_partitions/release-de0cvdemu2.db_info             ;
+; release-de0.qsf                                                           ;
+; release-de0cv.qsf                                                         ;
+; release-de0cvdemu.qsf                                                     ;
+; release-de0cvdemu2.qsf                                                    ;
+; release-de0cvdemu_assignment_defaults.qdf                                 ;
+; release-pc88de0cvdemu.cof                                                 ;
+; RTC/rtc1990.vhd                                                           ;
+; RTC/rtcbody.vhd                                                           ;
+; SPI/SPI_IF.vhd                                                            ;
+; USART/e8251.vhd                                                           ;
+; USART/rxframe.vhd                                                         ;
+; USART/txframe.vhd                                                         ;
+; VIDEO/CRTCP.vhd                                                           ;
+; VIDEO/CRTCREGS.vhd                                                        ;
+; VIDEO/DBGLINE.vhd                                                         ;
+; VIDEO/GRAPHSCR.vhd                                                        ;
+; VIDEO/GraphALU.vhd                                                        ;
+; VIDEO/HDMI/EDID_pkg.vhd                                                   ;
+; VIDEO/HDMI/EDIDread.vhd                                                   ;
+; VIDEO/HDMI/tmds_enc.vhd                                                   ;
+; VIDEO/TRAMCONV.vhd                                                        ;
+; VIDEO/VTIMING.vhd                                                         ;
+; VIDEO/graphbuf.qip                                                        ;
+; VIDEO/graphbuf.vhd                                                        ;
+; VIDEO/synccont.vhd                                                        ;
+; VIDEO/synccont2.vhd                                                       ;
+; VIDEO/textscr.vhd                                                         ;
+; VIDEO/textscr2.vhd                                                        ;
+; VIDEO/video_timing_pkg.vhd                                                ;
+; diskemu.v2/FDemu.vhd                                                      ;
+; diskemu.v2/diskemu.qsys                                                   ;
+; diskemu.v2/diskemuunit.vhd                                                ;
+; diskemu.v2/doc/diskemu.txt                                                ;
+; diskemu.v2/fdcopy.vhd                                                     ;
+; diskemu.v2/mkgapsync.vhd                                                  ;
+; diskemu.v2/software/diskemu/mem_init/diskemu_mainmem.hex                  ;
+; diskemu.v2/software/diskemu/mem_init/meminit.qip                          ;
+; diskemu.v2/software/diskemu/mem_init/sramdefault.hex                      ;
+; diskemu.v2/sramdefault.hex                                                ;
+; rtc/I2Crtc.vhd                                                            ;
+; rtc/rtc4990.vhd                                                           ;
+; sound/AY38910.vhd                                                         ;
+; sound/FMcommon/FMreg.vhd                                                  ;
+; sound/FMcommon/MUL16x17.vhd                                               ;
+; sound/FMcommon/TLtbl.qip                                                  ;
+; sound/FMcommon/TLtbl.vhd                                                  ;
+; sound/FMcommon/envcont.vhd                                                ;
+; sound/FMcommon/envelope_pkg.vhd                                           ;
+; sound/FMcommon/envtest.vhd                                                ;
+; sound/FMcommon/muls16xu16.vhd                                             ;
+; sound/OPN/OPN.vhd                                                         ;
+; sound/OPN/OPNA.vhd                                                        ;
+; sound/OPN/OPNFM.vhd                                                       ;
+; sound/OPN/OPNREG.qip                                                      ;
+; sound/OPN/OPNREG.vhd                                                      ;
+; sound/OPN/RHYTHM/01BD.mif                                                 ;
+; sound/OPN/RHYTHM/02SD.mif                                                 ;
+; sound/OPN/RHYTHM/04TOP.mif                                                ;
+; sound/OPN/RHYTHM/08HH.mif                                                 ;
+; sound/OPN/RHYTHM/10TOM.mif                                                ;
+; sound/OPN/RHYTHM/20RIM.mif                                                ;
+; sound/OPN/RHYTHM/OPNARHYTHM.vhd                                           ;
+; sound/OPN/RHYTHM/ROM_01BD.cmp                                             ;
+; sound/OPN/RHYTHM/ROM_01BD.qip                                             ;
+; sound/OPN/RHYTHM/ROM_01BD.vhd                                             ;
+; sound/OPN/RHYTHM/ROM_02SD.cmp                                             ;
+; sound/OPN/RHYTHM/ROM_02SD.qip                                             ;
+; sound/OPN/RHYTHM/ROM_02SD.vhd                                             ;
+; sound/OPN/RHYTHM/ROM_04TOP.cmp                                            ;
+; sound/OPN/RHYTHM/ROM_04TOP.qip                                            ;
+; sound/OPN/RHYTHM/ROM_04TOP.vhd                                            ;
+; sound/OPN/RHYTHM/ROM_08HH.cmp                                             ;
+; sound/OPN/RHYTHM/ROM_08HH.qip                                             ;
+; sound/OPN/RHYTHM/ROM_08HH.vhd                                             ;
+; sound/OPN/RHYTHM/ROM_10TOM.cmp                                            ;
+; sound/OPN/RHYTHM/ROM_10TOM.qip                                            ;
+; sound/OPN/RHYTHM/ROM_10TOM.vhd                                            ;
+; sound/OPN/RHYTHM/ROM_20RIM.cmp                                            ;
+; sound/OPN/RHYTHM/ROM_20RIM.qip                                            ;
+; sound/OPN/RHYTHM/ROM_20RIM.vhd                                            ;
+; sound/OPN/ram16x32.qip                                                    ;
+; sound/OPN/ram16x32.vhd                                                    ;
+; sound/OPNAADPCM/CALCOPNAADPCM_sft.vhd                                     ;
+; sound/OPNAADPCM/OPNAADPCM.vhd                                             ;
+; sound/OPNAADPCM/PCMTIMING.vhd                                             ;
+; sound/b7lev.cmp                                                           ;
+; sound/b7lev.mif                                                           ;
+; sound/b7lev.qip                                                           ;
+; sound/b7lev.vhd                                                           ;
+; sound/beeposc.vhd                                                         ;
+; sound/cosn.mif                                                            ;
+; sound/cosnrom.vhd                                                         ;
+; sound/mult16.vhd                                                          ;
+; sound/noisegen.vhd                                                        ;
+; sound/sinn.mif                                                            ;
+; sound/sinnrom.vhd                                                         ;
+; sound/sintbl.vhd                                                          ;
+; sound/sinw.mif                                                            ;
+; sound/sinwrom.vhd                                                         ;
++---------------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+; PC88top.cof        ;
+; rtc/rtc1990.vhd    ;
+; rtc/rtcbody.vhd    ;
++--------------------+
+
+

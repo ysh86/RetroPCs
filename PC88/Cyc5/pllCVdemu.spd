@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="pllCVdemu_sim/pllCVdemu.vho" type="VHDL" />
+ <topLevel name="pllCVdemu" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

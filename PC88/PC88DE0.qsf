@@ -1,0 +1,580 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Altera Program License
+# Subscription Agreement, Altera MegaCore Function License
+# Agreement, or other applicable license agreement, including,
+# without limitation, that your use is for the sole purpose of
+# programming logic devices manufactured by Altera and sold by
+# Altera or its authorized distributors.  Please refer to the
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 14:39:44  June 12, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PC88DE0_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C8
+set_global_assignment -name TOP_LEVEL_ENTITY S88DE0
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:55:53  SEPTEMBER 11, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name CYCLONE_CONFIGURATION_DEVICE EPCS4
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name FITTER_AUTO_EFFORT_DESIRED_SLACK_MARGIN "12 ns"
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_global_assignment -name FMAX_REQUIREMENT "21.480431 MHz" -section_id pclk21m
+set_global_assignment -name OPTIMIZE_TIMING OFF
+set_global_assignment -name ALLOW_POWER_UP_DONT_CARE ON
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_location_assignment PIN_K18 -to pDac_VB[3]
+set_location_assignment PIN_J22 -to pDac_VB[2]
+set_location_assignment PIN_J21 -to pDac_VG[3]
+set_location_assignment PIN_K17 -to pDac_VG[2]
+set_location_assignment PIN_H21 -to pDac_VR[3]
+set_location_assignment PIN_H20 -to pDac_VR[2]
+set_location_assignment PIN_E3 -to pDip[7]
+set_location_assignment PIN_J7 -to pDip[5]
+set_location_assignment PIN_H7 -to pDip[6]
+set_location_assignment PIN_G5 -to pDip[4]
+set_location_assignment PIN_G4 -to pDip[3]
+set_location_assignment PIN_H6 -to pDip[2]
+set_location_assignment PIN_H5 -to pDip[1]
+set_location_assignment PIN_J6 -to pDip[0]
+set_location_assignment PIN_R2 -to pFlshAdr[21]
+set_location_assignment PIN_P3 -to pFlshAdr[20]
+set_location_assignment PIN_P1 -to pFlshAdr[19]
+set_location_assignment PIN_M6 -to pFlshAdr[18]
+set_location_assignment PIN_M5 -to pFlshAdr[17]
+set_location_assignment PIN_AA2 -to pFlshAdr[16]
+set_location_assignment PIN_L6 -to pFlshAdr[15]
+set_location_assignment PIN_L7 -to pFlshAdr[14]
+set_location_assignment PIN_M1 -to pFlshAdr[13]
+set_location_assignment PIN_M2 -to pFlshAdr[12]
+set_location_assignment PIN_M3 -to pFlshAdr[11]
+set_location_assignment PIN_N1 -to pFlshAdr[10]
+set_location_assignment PIN_N2 -to pFlshAdr[9]
+set_location_assignment PIN_P2 -to pFlshAdr[8]
+set_location_assignment PIN_M4 -to pFlshAdr[7]
+set_location_assignment PIN_M8 -to pFlshAdr[6]
+set_location_assignment PIN_N6 -to pFlshAdr[5]
+set_location_assignment PIN_N5 -to pFlshAdr[4]
+set_location_assignment PIN_N7 -to pFlshAdr[3]
+set_location_assignment PIN_P6 -to pFlshAdr[2]
+set_location_assignment PIN_P5 -to pFlshAdr[1]
+set_location_assignment PIN_P7 -to pFlshAdr[0]
+set_location_assignment PIN_AA1 -to pFlshByte_n
+set_location_assignment PIN_N8 -to pFlshCe_n
+set_location_assignment PIN_Y2 -to pFlshDQ[15]
+set_location_assignment PIN_W2 -to pFlshDQ[14]
+set_location_assignment PIN_V4 -to pFlshDQ[13]
+set_location_assignment PIN_V1 -to pFlshDQ[12]
+set_location_assignment PIN_U2 -to pFlshDQ[11]
+set_location_assignment PIN_T4 -to pFlshDQ[10]
+set_location_assignment PIN_T7 -to pFlshDQ[9]
+set_location_assignment PIN_T5 -to pFlshDQ[8]
+set_location_assignment PIN_Y1 -to pFlshDQ[7]
+set_location_assignment PIN_W1 -to pFlshDQ[6]
+set_location_assignment PIN_V3 -to pFlshDQ[5]
+set_location_assignment PIN_V2 -to pFlshDQ[4]
+set_location_assignment PIN_U1 -to pFlshDQ[3]
+set_location_assignment PIN_R8 -to pFlshDQ[2]
+set_location_assignment PIN_P8 -to pFlshDQ[1]
+set_location_assignment PIN_R7 -to pFlshDQ[0]
+set_location_assignment PIN_R6 -to pFlshOe_n
+set_location_assignment PIN_R1 -to pFlshRst_n
+set_location_assignment PIN_M7 -to pFlshRy
+set_location_assignment PIN_P4 -to pFlshWe_n
+set_location_assignment PIN_T3 -to pFlshWp_n
+set_location_assignment PIN_AB11 -to pJoyA[5]
+set_location_assignment PIN_AA11 -to pJoyA[4]
+set_location_assignment PIN_AB18 -to pJoyA[3]
+set_location_assignment PIN_AA19 -to pJoyA[2]
+set_location_assignment PIN_AB20 -to pJoyA[1]
+set_location_assignment PIN_AA20 -to pJoyA[0]
+set_location_assignment PIN_Y7 -to pJoyB[5]
+set_location_assignment PIN_T10 -to pJoyB[4]
+set_location_assignment PIN_V7 -to pJoyB[3]
+set_location_assignment PIN_U8 -to pJoyB[2]
+set_location_assignment PIN_T9 -to pJoyB[1]
+set_location_assignment PIN_U9 -to pJoyB[0]
+set_location_assignment PIN_C2 -to pLed[7]
+set_location_assignment PIN_C1 -to pLed[6]
+set_location_assignment PIN_E1 -to pLed[5]
+set_location_assignment PIN_F2 -to pLed[4]
+set_location_assignment PIN_H1 -to pLed[3]
+set_location_assignment PIN_J3 -to pLed[2]
+set_location_assignment PIN_J2 -to pLed[1]
+set_location_assignment PIN_J1 -to pLed[0]
+set_location_assignment PIN_C8 -to pMemAdr[12]
+set_location_assignment PIN_A7 -to pMemAdr[11]
+set_location_assignment PIN_B4 -to pMemAdr[10]
+set_location_assignment PIN_B7 -to pMemAdr[9]
+set_location_assignment PIN_C7 -to pMemAdr[8]
+set_location_assignment PIN_A6 -to pMemAdr[7]
+set_location_assignment PIN_B6 -to pMemAdr[6]
+set_location_assignment PIN_C6 -to pMemAdr[5]
+set_location_assignment PIN_A5 -to pMemAdr[4]
+set_location_assignment PIN_C3 -to pMemAdr[3]
+set_location_assignment PIN_B3 -to pMemAdr[2]
+set_location_assignment PIN_A3 -to pMemAdr[1]
+set_location_assignment PIN_C4 -to pMemAdr[0]
+set_location_assignment PIN_B5 -to pMemBa0
+set_location_assignment PIN_A4 -to pMemBa1
+set_location_assignment PIN_G8 -to pMemCas_n
+set_location_assignment PIN_E6 -to pMemCke
+set_location_assignment PIN_E5 -to pMemClk
+set_location_assignment PIN_G7 -to pMemCs_n
+set_location_assignment PIN_F10 -to pMemDat[15]
+set_location_assignment PIN_E10 -to pMemDat[14]
+set_location_assignment PIN_A10 -to pMemDat[13]
+set_location_assignment PIN_B10 -to pMemDat[12]
+set_location_assignment PIN_C10 -to pMemDat[11]
+set_location_assignment PIN_A9 -to pMemDat[10]
+set_location_assignment PIN_B9 -to pMemDat[9]
+set_location_assignment PIN_A8 -to pMemDat[8]
+set_location_assignment PIN_F8 -to pMemDat[7]
+set_location_assignment PIN_H9 -to pMemDat[6]
+set_location_assignment PIN_G9 -to pMemDat[5]
+set_location_assignment PIN_F9 -to pMemDat[4]
+set_location_assignment PIN_E9 -to pMemDat[3]
+set_location_assignment PIN_H10 -to pMemDat[2]
+set_location_assignment PIN_G10 -to pMemDat[1]
+set_location_assignment PIN_D10 -to pMemDat[0]
+set_location_assignment PIN_E7 -to pMemLdq
+set_location_assignment PIN_F7 -to pMemRas_n
+set_location_assignment PIN_B8 -to pMemUdq
+set_location_assignment PIN_D6 -to pMemWe_n
+set_location_assignment PIN_P22 -to pPs2Clk
+set_location_assignment PIN_P21 -to pPs2Dat
+set_location_assignment PIN_Y21 -to pSd_Ck
+set_location_assignment PIN_Y22 -to pSd_Cm
+set_location_assignment PIN_W21 -to pSd_Dt[3]
+set_location_assignment PIN_AA22 -to pSd_Dt[0]
+set_location_assignment PIN_L21 -to pVideoHS_n
+set_location_assignment PIN_L22 -to pVideoVS_n
+set_location_assignment PIN_F1 -to rstn
+set_location_assignment PIN_B12 -to pExtClk
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_location_assignment PIN_E4 -to pDip[8]
+set_location_assignment PIN_D2 -to pDip[9]
+set_location_assignment PIN_D13 -to pSeg0[7]
+set_location_assignment PIN_F13 -to pSeg0[6]
+set_location_assignment PIN_F12 -to pSeg0[5]
+set_location_assignment PIN_G12 -to pSeg0[4]
+set_location_assignment PIN_H13 -to pSeg0[3]
+set_location_assignment PIN_H12 -to pSeg0[2]
+set_location_assignment PIN_F11 -to pSeg0[1]
+set_location_assignment PIN_E11 -to pSeg0[0]
+set_location_assignment PIN_B15 -to pSeg1[7]
+set_location_assignment PIN_A15 -to pSeg1[6]
+set_location_assignment PIN_E14 -to pSeg1[5]
+set_location_assignment PIN_B14 -to pSeg1[4]
+set_location_assignment PIN_A14 -to pSeg1[3]
+set_location_assignment PIN_C13 -to pSeg1[2]
+set_location_assignment PIN_B13 -to pSeg1[1]
+set_location_assignment PIN_A13 -to pSeg1[0]
+set_location_assignment PIN_A18 -to pSeg2[7]
+set_location_assignment PIN_F14 -to pSeg2[6]
+set_location_assignment PIN_B17 -to pSeg2[5]
+set_location_assignment PIN_A17 -to pSeg2[4]
+set_location_assignment PIN_E15 -to pSeg2[3]
+set_location_assignment PIN_B16 -to pSeg2[2]
+set_location_assignment PIN_A16 -to pSeg2[1]
+set_location_assignment PIN_D15 -to pSeg2[0]
+set_location_assignment PIN_G16 -to pSeg3[7]
+set_location_assignment PIN_G15 -to pSeg3[6]
+set_location_assignment PIN_D19 -to pSeg3[5]
+set_location_assignment PIN_C19 -to pSeg3[4]
+set_location_assignment PIN_B19 -to pSeg3[3]
+set_location_assignment PIN_A19 -to pSeg3[2]
+set_location_assignment PIN_F15 -to pSeg3[1]
+set_location_assignment PIN_B18 -to pSeg3[0]
+set_location_assignment PIN_Y17 -to pFd_DENn
+set_location_assignment PIN_W17 -to pFd_INDEXn
+set_location_assignment PIN_V15 -to pFd_MOTOR1
+set_location_assignment PIN_U15 -to pFd_MOTOR0
+set_location_assignment PIN_W15 -to pFd_DS0
+set_location_assignment PIN_T15 -to pFd_DS1
+set_location_assignment PIN_AB9 -to pFd_DIRn
+set_location_assignment PIN_AA9 -to pFd_STEPn
+set_location_assignment PIN_AA7 -to pFd_WDATAn
+set_location_assignment PIN_AB7 -to pFd_WGATEn
+set_location_assignment PIN_T14 -to pFd_TRK00n
+set_location_assignment PIN_R14 -to pFd_WPTn
+set_location_assignment PIN_U12 -to pFd_RDATAn
+set_location_assignment PIN_T12 -to pFd_SIDE1n
+set_location_assignment PIN_R11 -to pFd_DSKCHG
+set_location_assignment PIN_K21 -to pDac_VB[1]
+set_location_assignment PIN_K22 -to pDac_VB[0]
+set_location_assignment PIN_J17 -to pDac_VG[1]
+set_location_assignment PIN_H22 -to pDac_VG[0]
+set_location_assignment PIN_H17 -to pDac_VR[1]
+set_location_assignment PIN_H19 -to pDac_VR[0]
+set_location_assignment PIN_U10 -to pDac_SL
+set_location_assignment PIN_R12 -to pDac_SR
+set_location_assignment PIN_AB16 -to pMONled[0]
+set_location_assignment PIN_AA16 -to pMONled[1]
+set_location_assignment PIN_AA15 -to pMONled[2]
+set_location_assignment PIN_AB15 -to pMONled[3]
+set_location_assignment PIN_AA14 -to pMONled[4]
+set_location_assignment PIN_AB14 -to pMONled[5]
+set_location_assignment PIN_AB13 -to pMONled[6]
+set_location_assignment PIN_AA13 -to pMONled[7]
+set_location_assignment PIN_AB10 -to pMONcol[0]
+set_location_assignment PIN_AA10 -to pMONcol[1]
+set_location_assignment PIN_AB8 -to pMONcol[2]
+set_location_assignment PIN_AA8 -to pMONcol[3]
+set_location_assignment PIN_AB17 -to pI2Cscl
+set_location_assignment PIN_AA18 -to pI2Csda
+set_location_assignment PIN_B2 -to pLed[8]
+set_location_assignment PIN_B1 -to pLed[9]
+set_location_assignment PIN_R21 -to pPmsClk
+set_location_assignment PIN_R22 -to pPmsDat
+set_location_assignment PIN_G3 -to pPsw[1]
+set_location_assignment PIN_H2 -to pPsw[0]
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE pc88de0_FDC.stp
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[4]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[5]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[6]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[4]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[5]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[6]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[4]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[5]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[6]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[8]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[9]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[10]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[11]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[12]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[13]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[14]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[15]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPs2Clk
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPs2Dat
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Ck
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Cm
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pVideoHS_n
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pVideoVS_n
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPmsClk
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPmsDat
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE BALANCED
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_location_assignment PIN_U22 -to pCOM_RxD
+set_location_assignment PIN_V21 -to pCOM_RTS
+set_location_assignment PIN_U21 -to pCOM_TxD
+set_location_assignment PIN_V22 -to pCOM_CTS
+set_location_assignment PIN_G21 -to pclk50m
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS4
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_AB19 -to pStrA
+set_location_assignment PIN_V6 -to pStrB
+set_global_assignment -name AUTO_RAM_TO_LCELL_CONVERSION ON
+set_global_assignment -name AUTO_RESOURCE_SHARING ON
+set_global_assignment -name ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION ON
+set_global_assignment -name ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION ON
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name MISC_FILE "\"PC88TOP.dpf\""
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE nrdet.vwf
+set_global_assignment -name VHDL_FILE I2C/I2C_pkg.vhd
+set_global_assignment -name VHDL_FILE I2C/I2CIF.vhd
+set_global_assignment -name VHDL_FILE S88DE0.vhd
+set_global_assignment -name VHDL_FILE sdramcde0.vhd
+set_global_assignment -name VHDL_FILE sdramc5.vhd
+set_global_assignment -name QIP_FILE pll2x.qip
+set_global_assignment -name VHDL_FILE LIB/multi.vhd
+set_global_assignment -name VHDL_FILE LIB/susmult.vhd
+set_global_assignment -name VHDL_FILE LIB/ssmult.vhd
+set_global_assignment -name VHDL_FILE LIB/average.vhd
+set_global_assignment -name VHDL_FILE LIB/clktx.vhd
+set_global_assignment -name VHDL_FILE LIB/e8255.vhd
+set_global_assignment -name VHDL_FILE LIB/addsat.vhd
+set_global_assignment -name VHDL_FILE LIB/g_srff.vhd
+set_global_assignment -name VHDL_FILE LIB/HEX2SEG.vhd
+set_global_assignment -name VHDL_FILE LIB/signext.vhd
+set_global_assignment -name VHDL_FILE LIB/CRCGENN.vhd
+set_global_assignment -name VHDL_FILE LIB/sftdiv.vhd
+set_global_assignment -name VHDL_FILE LIB/sftgen.vhd
+set_global_assignment -name VHDL_FILE LIB/HEX2SEGn.vhd
+set_global_assignment -name VHDL_FILE LIB/sftclk.vhd
+set_global_assignment -name VHDL_FILE LIB/PARITYG.vhd
+set_global_assignment -name VHDL_FILE LIB/PARGEN.vhd
+set_global_assignment -name VHDL_FILE LIB/unchchata.vhd
+set_global_assignment -name VHDL_FILE LIB/delayer.vhd
+set_global_assignment -name VHDL_FILE LIB/digifilters.vhd
+set_global_assignment -name VHDL_FILE LIB/digifilter.vhd
+set_global_assignment -name VHDL_FILE LIB/deltasigmadac.vhd
+set_global_assignment -name VHDL_FILE LIB/clkdiv.vhd
+set_global_assignment -name VHDL_FILE LIB/intchk.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_ALU.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_MCode.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_Pack.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_Reg.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80a.vhd
+set_global_assignment -name VHDL_FILE crctest.vhd
+set_global_assignment -name VHDL_FILE FDC/FDCs.vhd
+set_global_assignment -name VHDL_FILE FDC/FDC_sectinfo.vhd
+set_global_assignment -name VHDL_FILE FDC/FDC_timing.vhd
+set_global_assignment -name VHDL_FILE FDC/fmdem.vhd
+set_global_assignment -name VHDL_FILE FDC/fmmod.vhd
+set_global_assignment -name VHDL_FILE FDC/headseek.vhd
+set_global_assignment -name VHDL_FILE FDC/mfmdem.vhd
+set_global_assignment -name VHDL_FILE FDC/mfmmod.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE crctestr.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE crctest.vwf
+set_global_assignment -name VHDL_FILE FDC/dc2ry.vhd
+set_global_assignment -name VHDL_FILE FDC/nrdet.vhd
+set_global_assignment -name VHDL_FILE FDC/MTsave.vhd
+set_global_assignment -name VHDL_FILE RAMTEST.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE PC88TOP.vwf
+set_global_assignment -name VHDL_FILE PS2KB/KBTBLE0.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBTBLN.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBIF.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBIO.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBMAP.vhd
+set_global_assignment -name QIP_FILE PS2KB/KBIO.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE kbif.vwf
+set_global_assignment -name QIP_FILE PS2KB/KBTBLN.qip
+set_global_assignment -name QIP_FILE PS2KB/KBTBLE0.qip
+set_global_assignment -name VHDL_FILE VIDEO/CRTCP.vhd
+set_global_assignment -name VHDL_FILE VIDEO/synccont2.vhd
+set_global_assignment -name VHDL_FILE VIDEO/textscr.vhd
+set_global_assignment -name VHDL_FILE VIDEO/video_timing_pkg.vhd
+set_global_assignment -name VHDL_FILE VIDEO/VTIMING.vhd
+set_global_assignment -name VHDL_FILE VIDEO/TRAMCONV.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE TRAMCONV.vwf
+set_global_assignment -name VHDL_FILE VIDEO/GraphALU.vhd
+set_global_assignment -name VHDL_FILE VIDEO/GRAPHSCR.vhd
+set_global_assignment -name VHDL_FILE VIDEO/CRTCREGS.vhd
+set_global_assignment -name QIP_FILE VIDEO/graphbuf.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE CRTC2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE vtiming.vwf
+set_global_assignment -name VHDL_FILE VIDEO/DBGLINE.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE dbgline.vwf
+set_global_assignment -name VHDL_FILE VIDEO/textscr2.vhd
+set_global_assignment -name VHDL_FILE USART/e8251.vhd
+set_global_assignment -name VHDL_FILE USART/rxframe.vhd
+set_global_assignment -name VHDL_FILE USART/txframe.vhd
+set_global_assignment -name VHDL_FILE bios1.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE memorymap.vwf
+set_global_assignment -name VHDL_FILE bios.vhd
+set_global_assignment -name VHDL_FILE pll4x.vhd
+set_global_assignment -name VHDL_FILE SPI_IF.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE SPI_IF.vwf
+set_global_assignment -name QIP_FILE TEXTRAM.qip
+set_global_assignment -name QIP_FILE fontrom.qip
+set_global_assignment -name VHDL_FILE fontrom.vhd
+set_global_assignment -name VHDL_FILE fgraphrom.vhd
+set_global_assignment -name QIP_FILE fgraphrom.qip
+set_global_assignment -name VHDL_FILE IO_RD.vhd
+set_global_assignment -name VHDL_FILE IO_WR.vhd
+set_global_assignment -name VHDL_FILE IO_RW.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE IORD.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T80a.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE INTCONT.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TRAM.vwf
+set_global_assignment -name VHDL_FILE SUBunit/mmapsub.vhd
+set_global_assignment -name VHDL_FILE SUBunits.vhd
+set_global_assignment -name VHDL_FILE SUBunit/INTSUB.vhd
+set_global_assignment -name VHDL_FILE SUBunit/subrom.vhd
+set_global_assignment -name QIP_FILE pll4x.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE RAMTEST.vwf
+set_global_assignment -name VHDL_FILE cpuclk.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE pll4x.vwf
+set_global_assignment -name VHDL_FILE sound/FMcommon/FMreg.vhd
+set_global_assignment -name MIF_FILE TL.mif
+set_global_assignment -name QIP_FILE sound/FMcommon/TLtbl.qip
+set_global_assignment -name VHDL_FILE sound/FMcommon/muls16xu16.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/MUL16x17.vhd
+set_global_assignment -name QIP_FILE MUL16x17.qip
+set_global_assignment -name VHDL_FILE sound/FMcommon/TLtbl.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/envcont.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/envelope_pkg.vhd
+set_global_assignment -name VHDL_FILE sound/OPN/OPN.vhd
+set_global_assignment -name VHDL_FILE sound/OPN/OPNFM.vhd
+set_global_assignment -name VHDL_FILE sound/b7lev.vhd
+set_global_assignment -name QIP_FILE sound/b7lev.qip
+set_global_assignment -name VHDL_FILE sound/beeposc.vhd
+set_global_assignment -name VHDL_FILE sound/cosnrom.vhd
+set_global_assignment -name VHDL_FILE sound/mult16.vhd
+set_global_assignment -name VHDL_FILE sound/sinnrom.vhd
+set_global_assignment -name VHDL_FILE sound/sintbl.vhd
+set_global_assignment -name VHDL_FILE sound/sinwrom.vhd
+set_global_assignment -name VHDL_FILE sound/OPN/OPNREG.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE OPN.vwf
+set_global_assignment -name QIP_FILE sound/OPN/ram16x32.qip
+set_global_assignment -name VHDL_FILE sound/OPN/ram16x32.vhd
+set_global_assignment -name VHDL_FILE sound/OPNAADPCM/PCMTIMING.vhd
+set_global_assignment -name VHDL_FILE sound/OPNAADPCM/OPNAADPCM.vhd
+set_global_assignment -name VHDL_FILE sound/OPNAADPCM/CALCOPNAADPCM_sft.vhd
+set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_20RIM.vhd
+set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_20RIM.qip
+set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_10TOM.vhd
+set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_10TOM.qip
+set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_08HH.vhd
+set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_08HH.qip
+set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_04TOP.vhd
+set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_04TOP.qip
+set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_02SD.vhd
+set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_02SD.qip
+set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_01BD.vhd
+set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_01BD.qip
+set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/OPNARHYTHM.vhd
+set_global_assignment -name VHDL_FILE sound/OPN/OPNA.vhd
+set_global_assignment -name VHDL_FILE sound/noisegen.vhd
+set_global_assignment -name VHDL_FILE CPUTEST.vhd
+set_global_assignment -name QIP_FILE testrom.qip
+set_global_assignment -name QIP_FILE testram.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE cputest.vwf
+set_global_assignment -name SOURCE_FILE mtest.asm
+set_global_assignment -name SOURCE_FILE itest.asm
+set_global_assignment -name VHDL_FILE testrom.vhd
+set_global_assignment -name VHDL_FILE testram.vhd
+set_global_assignment -name VHDL_FILE S88TOP.vhd
+set_global_assignment -name VHDL_FILE IO_WRS.vhd
+set_global_assignment -name VHDL_FILE IO_RWS.vhd
+set_global_assignment -name VHDL_FILE memorymaps.vhd
+set_global_assignment -name VHDL_FILE TDMAREGS.vhd
+set_global_assignment -name VHDL_FILE RTC/rtc1990.vhd
+set_global_assignment -name VHDL_FILE RTC/rtcbody.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE rtcbody.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE rtc1990.vwf
+set_global_assignment -name VHDL_FILE rtc/rtc4990.vhd
+set_global_assignment -name VERILOG_FILE rtc.v
+set_global_assignment -name VHDL_FILE MONLED.vhd
+set_global_assignment -name VHDL_FILE palette.vhd
+set_global_assignment -name VHDL_FILE KANJIROM.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE KANJIROM.vwf
+set_global_assignment -name VHDL_FILE INTCONTS.vhd
+set_global_assignment -name VHDL_FILE seg7.vhd
+set_global_assignment -name VHDL_FILE debboard.vhd
+set_global_assignment -name VHDL_FILE FDtiming.vhd
+set_global_assignment -name VHDL_FILE RAMCLR.vhd
+set_global_assignment -name VHDL_FILE IO_DETAC.vhd
+set_global_assignment -name VHDL_FILE CMT/cmtmod.vhd
+set_global_assignment -name VHDL_FILE CMT/cmtdem.vhd
+set_global_assignment -name SOURCE_FILE cputi0.asm
+set_global_assignment -name VECTOR_WAVEFORM_FILE cputestnw.vwf
+set_global_assignment -name VHDL_FILE FDCTEST.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE FDCTEST.vwf
+set_global_assignment -name VHDL_FILE FDCTEST2.vhd
+set_global_assignment -name VHDL_FILE trammaps.vhd
+set_global_assignment -name VHDL_FILE FLSHCOPY.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE FLSHCOPY.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE pll2x.vwf
+set_global_assignment -name VHDL_FILE RAMTESTDE0.vhd
+set_global_assignment -name SIGNALTAP_FILE pc88de0.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_CPU.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_FDMODEM.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_FDC.stp
+set_global_assignment -name SIGNALTAP_FILE OPN.stp
+set_global_assignment -name VECTOR_WAVEFORM_FILE muls16xu16.vwf
+set_global_assignment -name SIGNALTAP_FILE pc88de0_SUB.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_IO.stp
+set_global_assignment -name SIGNALTAP_FILE MTsave.stp
+set_global_assignment -name SIGNALTAP_FILE e8251.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_IO_COM.stp
+set_global_assignment -name SIGNALTAP_FILE ps2kb.stp
+set_global_assignment -name VHDL_FILE rtc/I2Crtc.vhd
+set_global_assignment -name SIGNALTAP_FILE I2C.stp
+set_global_assignment -name SIGNALTAP_FILE OPN_SG.stp
+set_global_assignment -name SIGNALTAP_FILE OPN_FM.stp
+set_global_assignment -name SIGNALTAP_FILE PS2KB.stp
+set_global_assignment -name QIP_FILE sound/OPN/OPNREG.qip
+set_global_assignment -name VHDL_FILE sdramcde0snd.vhd
+set_global_assignment -name VHDL_FILE rampalette.vhd
+set_global_assignment -name SEARCH_PATH CMT/ -tag from_archive
+set_global_assignment -name SEARCH_PATH CPU/T80/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/pllCV/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/pllCVdemu/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/pllCVdemu_sim/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Doc/ -tag from_archive
+set_global_assignment -name SEARCH_PATH FDC/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Font/ -tag from_archive
+set_global_assignment -name SEARCH_PATH HDMI/ -tag from_archive
+set_global_assignment -name SEARCH_PATH HDMI/hdmipll/ -tag from_archive
+set_global_assignment -name SEARCH_PATH I2C/ -tag from_archive
+set_global_assignment -name SEARCH_PATH LIB/ -tag from_archive
+set_global_assignment -name SEARCH_PATH PS2KB/ -tag from_archive
+set_global_assignment -name SEARCH_PATH RTC/ -tag from_archive
+set_global_assignment -name SEARCH_PATH SPI/ -tag from_archive
+set_global_assignment -name SEARCH_PATH SUBunit/ -tag from_archive
+set_global_assignment -name SEARCH_PATH USART/ -tag from_archive
+set_global_assignment -name SEARCH_PATH VIDEO/ -tag from_archive
+set_global_assignment -name SEARCH_PATH VIDEO/HDMI/ -tag from_archive
+set_global_assignment -name SEARCH_PATH db/ip/diskemu/ -tag from_archive
+set_global_assignment -name SEARCH_PATH db/ip/diskemu/submodules/ -tag from_archive
+set_global_assignment -name SEARCH_PATH diskemu.v2/ -tag from_archive
+set_global_assignment -name SEARCH_PATH diskemu.v2/doc/ -tag from_archive
+set_global_assignment -name SEARCH_PATH diskemu.v2/software/diskemu/mem_init/ -tag from_archive
+set_global_assignment -name SEARCH_PATH rtc/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/FMcommon/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/OPN/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/OPN/RHYTHM/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/OPNAADPCM/ -tag from_archive

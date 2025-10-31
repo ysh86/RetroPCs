@@ -1,0 +1,1299 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Altera Program License
+# Subscription Agreement, Altera MegaCore Function License
+# Agreement, or other applicable license agreement, including,
+# without limitation, that your use is for the sole purpose of
+# programming logic devices manufactured by Altera and sold by
+# Altera or its authorized distributors.  Please refer to the
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 14:39:44  June 12, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PC88DE0CV_DEMU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C7
+set_global_assignment -name TOP_LEVEL_ENTITY S88DE0CVDEMU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:54:53  DECEMBER 30, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name CYCLONE_CONFIGURATION_DEVICE EPCS4
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name FITTER_AUTO_EFFORT_DESIRED_SLACK_MARGIN "12 ns"
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_global_assignment -name FMAX_REQUIREMENT "21.480431 MHz" -section_id pclk21m
+set_global_assignment -name OPTIMIZE_TIMING OFF
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_location_assignment PIN_A7 -to pDac_VB[3]
+set_location_assignment PIN_A8 -to pDac_VB[2]
+set_location_assignment PIN_J8 -to pDac_VG[3]
+set_location_assignment PIN_J7 -to pDac_VG[2]
+set_location_assignment PIN_A5 -to pDac_VR[3]
+set_location_assignment PIN_C9 -to pDac_VR[2]
+set_location_assignment PIN_AA13 -to pDip[7]
+set_location_assignment PIN_AB15 -to pDip[5]
+set_location_assignment PIN_AA14 -to pDip[6]
+set_location_assignment PIN_AA15 -to pDip[4]
+set_location_assignment PIN_T12 -to pDip[3]
+set_location_assignment PIN_T13 -to pDip[2]
+set_location_assignment PIN_V13 -to pDip[1]
+set_location_assignment PIN_U13 -to pDip[0]
+set_location_assignment PIN_H16 -to pJoyA[5]
+set_location_assignment PIN_H15 -to pJoyA[4]
+set_location_assignment PIN_C13 -to pJoyA[3]
+set_location_assignment PIN_A13 -to pJoyA[2]
+set_location_assignment PIN_B12 -to pJoyA[1]
+set_location_assignment PIN_A12 -to pJoyA[0]
+set_location_assignment PIN_G13 -to pJoyB[5]
+set_location_assignment PIN_F12 -to pJoyB[4]
+set_location_assignment PIN_K16 -to pJoyB[3]
+set_location_assignment PIN_G12 -to pJoyB[2]
+set_location_assignment PIN_G15 -to pJoyB[1]
+set_location_assignment PIN_G16 -to pJoyB[0]
+set_location_assignment PIN_U1 -to pLed[7]
+set_location_assignment PIN_U2 -to pLed[6]
+set_location_assignment PIN_N1 -to pLed[5]
+set_location_assignment PIN_N2 -to pLed[4]
+set_location_assignment PIN_Y3 -to pLed[3]
+set_location_assignment PIN_W2 -to pLed[2]
+set_location_assignment PIN_AA1 -to pLed[1]
+set_location_assignment PIN_AA2 -to pLed[0]
+set_location_assignment PIN_R7 -to pMemAdr[12]
+set_location_assignment PIN_P6 -to pMemAdr[11]
+set_location_assignment PIN_U8 -to pMemAdr[10]
+set_location_assignment PIN_R5 -to pMemAdr[9]
+set_location_assignment PIN_P8 -to pMemAdr[8]
+set_location_assignment PIN_P7 -to pMemAdr[7]
+set_location_assignment PIN_P12 -to pMemAdr[6]
+set_location_assignment PIN_AB10 -to pMemAdr[5]
+set_location_assignment PIN_N6 -to pMemAdr[4]
+set_location_assignment PIN_Y10 -to pMemAdr[3]
+set_location_assignment PIN_U11 -to pMemAdr[2]
+set_location_assignment PIN_T8 -to pMemAdr[1]
+set_location_assignment PIN_W8 -to pMemAdr[0]
+set_location_assignment PIN_T7 -to pMemBa0
+set_location_assignment PIN_AB7 -to pMemBa1
+set_location_assignment PIN_V6 -to pMemCas_n
+set_location_assignment PIN_R6 -to pMemCke
+set_location_assignment PIN_AB11 -to pMemClk
+set_location_assignment PIN_U6 -to pMemCs_n
+set_location_assignment PIN_T9 -to pMemDat[15]
+set_location_assignment PIN_U10 -to pMemDat[14]
+set_location_assignment PIN_V9 -to pMemDat[13]
+set_location_assignment PIN_V10 -to pMemDat[12]
+set_location_assignment PIN_AA7 -to pMemDat[11]
+set_location_assignment PIN_AA8 -to pMemDat[10]
+set_location_assignment PIN_AB8 -to pMemDat[9]
+set_location_assignment PIN_AA9 -to pMemDat[8]
+set_location_assignment PIN_AA12 -to pMemDat[7]
+set_location_assignment PIN_R12 -to pMemDat[6]
+set_location_assignment PIN_R11 -to pMemDat[5]
+set_location_assignment PIN_R10 -to pMemDat[4]
+set_location_assignment PIN_Y11 -to pMemDat[3]
+set_location_assignment PIN_R9 -to pMemDat[2]
+set_location_assignment PIN_T10 -to pMemDat[1]
+set_location_assignment PIN_Y9 -to pMemDat[0]
+set_location_assignment PIN_U12 -to pMemLdq
+set_location_assignment PIN_AB6 -to pMemRas_n
+set_location_assignment PIN_N8 -to pMemUdq
+set_location_assignment PIN_AB5 -to pMemWe_n
+set_location_assignment PIN_D3 -to pPs2Clk
+set_location_assignment PIN_G2 -to pPs2Dat
+set_location_assignment PIN_H11 -to pSd_Ck
+set_location_assignment PIN_B11 -to pSd_Cm
+set_location_assignment PIN_C11 -to pSd_Dt[3]
+set_location_assignment PIN_K9 -to pSd_Dt[0]
+set_location_assignment PIN_H8 -to pVideoHS_n
+set_location_assignment PIN_G8 -to pVideoVS_n
+set_location_assignment PIN_P22 -to rstn
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_location_assignment PIN_AB13 -to pDip[8]
+set_location_assignment PIN_AB12 -to pDip[9]
+set_location_assignment PIN_AA22 -to pSeg0[6]
+set_location_assignment PIN_Y21 -to pSeg0[5]
+set_location_assignment PIN_Y22 -to pSeg0[4]
+set_location_assignment PIN_W21 -to pSeg0[3]
+set_location_assignment PIN_W22 -to pSeg0[2]
+set_location_assignment PIN_V21 -to pSeg0[1]
+set_location_assignment PIN_U21 -to pSeg0[0]
+set_location_assignment PIN_U22 -to pSeg1[6]
+set_location_assignment PIN_AA17 -to pSeg1[5]
+set_location_assignment PIN_AB18 -to pSeg1[4]
+set_location_assignment PIN_AA18 -to pSeg1[3]
+set_location_assignment PIN_AA19 -to pSeg1[2]
+set_location_assignment PIN_AB20 -to pSeg1[1]
+set_location_assignment PIN_AA20 -to pSeg1[0]
+set_location_assignment PIN_AB21 -to pSeg2[6]
+set_location_assignment PIN_AB22 -to pSeg2[5]
+set_location_assignment PIN_V14 -to pSeg2[4]
+set_location_assignment PIN_Y14 -to pSeg2[3]
+set_location_assignment PIN_AA10 -to pSeg2[2]
+set_location_assignment PIN_AB17 -to pSeg2[1]
+set_location_assignment PIN_Y19 -to pSeg2[0]
+set_location_assignment PIN_V19 -to pSeg3[6]
+set_location_assignment PIN_V18 -to pSeg3[5]
+set_location_assignment PIN_U17 -to pSeg3[4]
+set_location_assignment PIN_V16 -to pSeg3[3]
+set_location_assignment PIN_Y17 -to pSeg3[2]
+set_location_assignment PIN_W16 -to pSeg3[1]
+set_location_assignment PIN_Y16 -to pSeg3[0]
+set_location_assignment PIN_H18 -to pFd_DENn
+set_location_assignment PIN_J18 -to pFd_INDEXn
+set_location_assignment PIN_J11 -to pFd_MOTOR1
+set_location_assignment PIN_J19 -to pFd_MOTOR0
+set_location_assignment PIN_H10 -to pFd_DS0
+set_location_assignment PIN_G11 -to pFd_DS1
+set_location_assignment PIN_A15 -to pFd_DIRn
+set_location_assignment PIN_L8 -to pFd_STEPn
+set_location_assignment PIN_A14 -to pFd_WDATAn
+set_location_assignment PIN_B15 -to pFd_WGATEn
+set_location_assignment PIN_C15 -to pFd_TRK00n
+set_location_assignment PIN_E14 -to pFd_WPTn
+set_location_assignment PIN_E15 -to pFd_RDATAn
+set_location_assignment PIN_E16 -to pFd_SIDE1n
+set_location_assignment PIN_F14 -to pFd_DSKCHG
+set_location_assignment PIN_B7 -to pDac_VB[1]
+set_location_assignment PIN_B6 -to pDac_VB[0]
+set_location_assignment PIN_K7 -to pDac_VG[1]
+set_location_assignment PIN_L7 -to pDac_VG[0]
+set_location_assignment PIN_B10 -to pDac_VR[1]
+set_location_assignment PIN_A9 -to pDac_VR[0]
+set_location_assignment PIN_F13 -to pDac_SL
+set_location_assignment PIN_F15 -to pDac_SR
+set_location_assignment PIN_B16 -to pMONled[0]
+set_location_assignment PIN_C16 -to pMONled[1]
+set_location_assignment PIN_D17 -to pMONled[2]
+set_location_assignment PIN_K20 -to pMONled[3]
+set_location_assignment PIN_K21 -to pMONled[4]
+set_location_assignment PIN_K22 -to pMONled[5]
+set_location_assignment PIN_M20 -to pMONled[6]
+set_location_assignment PIN_M21 -to pMONled[7]
+set_location_assignment PIN_N21 -to pMONcol[0]
+set_location_assignment PIN_R22 -to pMONcol[1]
+set_location_assignment PIN_R21 -to pMONcol[2]
+set_location_assignment PIN_T22 -to pMONcol[3]
+set_location_assignment PIN_G17 -to pI2Cscl
+set_location_assignment PIN_D13 -to pI2Csda
+set_location_assignment PIN_L2 -to pLed[8]
+set_location_assignment PIN_L1 -to pLed[9]
+set_location_assignment PIN_E2 -to pPmsClk
+set_location_assignment PIN_G1 -to pPmsDat
+set_location_assignment PIN_W9 -to pPsw[1]
+set_location_assignment PIN_U7 -to pPsw[0]
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE FDemu.stp
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_location_assignment PIN_M9 -to pclk50m
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X1"
+set_global_assignment -name STRATIXII_CONFIGURATION_DEVICE EPCS16
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_location_assignment PIN_T19 -to pCOM_CTS
+set_location_assignment PIN_T18 -to pCOM_RTS
+set_location_assignment PIN_T17 -to pCOM_RxD
+set_location_assignment PIN_T15 -to pCOM_TxD
+set_location_assignment PIN_E12 -to pSd_Dt[2]
+set_location_assignment PIN_D12 -to pSd_Dt[1]
+set_location_assignment PIN_P9 -to pSeg4[6]
+set_location_assignment PIN_Y15 -to pSeg4[5]
+set_location_assignment PIN_U15 -to pSeg4[4]
+set_location_assignment PIN_U16 -to pSeg4[3]
+set_location_assignment PIN_V20 -to pSeg4[2]
+set_location_assignment PIN_Y20 -to pSeg4[1]
+set_location_assignment PIN_U20 -to pSeg4[0]
+set_location_assignment PIN_W19 -to pSeg5[6]
+set_location_assignment PIN_C2 -to pSeg5[5]
+set_location_assignment PIN_C1 -to pSeg5[4]
+set_location_assignment PIN_P14 -to pSeg5[3]
+set_location_assignment PIN_T14 -to pSeg5[2]
+set_location_assignment PIN_M8 -to pSeg5[1]
+set_location_assignment PIN_N9 -to pSeg5[0]
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[4]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[5]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[6]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pDip[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[4]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[5]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[6]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pLed[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[4]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[5]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[6]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[8]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[9]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[10]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[11]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[12]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[13]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[14]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pMemDat[15]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPs2Clk
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPs2Dat
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Ck
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Cm
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pSd_Dt[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pVideoHS_n
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pVideoVS_n
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPmsClk
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to pPmsDat
+set_global_assignment -name AUTO_RAM_RECOGNITION OFF
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_location_assignment PIN_J17 -to pStrB
+set_location_assignment PIN_B13 -to pStrA
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=2048" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=2048" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "pllCV:MAINPLL|outclk_0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "SUBunitsDEMU:SUBU|FDC:FD|CRCGENN:CRCG|CRCZERO" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "SUBunitsDEMU:SUBU|FDC:FD|C[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "SUBunitsDEMU:SUBU|FDC:FD|C[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "SUBunitsDEMU:SUBU|FDC:FD|C[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "SUBunitsDEMU:SUBU|FDC:FD|C[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "SUBunitsDEMU:SUBU|FDC:FD|C[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "SUBunitsDEMU:SUBU|FDC:FD|C[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "SUBunitsDEMU:SUBU|FDC:FD|C[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "SUBunitsDEMU:SUBU|FDC:FD|C[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "SUBunitsDEMU:SUBU|FDC:FD|H[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "SUBunitsDEMU:SUBU|FDC:FD|H[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "SUBunitsDEMU:SUBU|FDC:FD|H[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "SUBunitsDEMU:SUBU|FDC:FD|H[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "SUBunitsDEMU:SUBU|FDC:FD|H[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "SUBunitsDEMU:SUBU|FDC:FD|H[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "SUBunitsDEMU:SUBU|FDC:FD|H[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "SUBunitsDEMU:SUBU|FDC:FD|H[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "SUBunitsDEMU:SUBU|FDC:FD|MF" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "SUBunitsDEMU:SUBU|FDC:FD|N[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "SUBunitsDEMU:SUBU|FDC:FD|N[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "SUBunitsDEMU:SUBU|FDC:FD|N[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "SUBunitsDEMU:SUBU|FDC:FD|N[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "SUBunitsDEMU:SUBU|FDC:FD|N[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "SUBunitsDEMU:SUBU|FDC:FD|N[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "SUBunitsDEMU:SUBU|FDC:FD|N[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "SUBunitsDEMU:SUBU|FDC:FD|N[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "SUBunitsDEMU:SUBU|FDC:FD|R[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "SUBunitsDEMU:SUBU|FDC:FD|R[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "SUBunitsDEMU:SUBU|FDC:FD|R[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "SUBunitsDEMU:SUBU|FDC:FD|R[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "SUBunitsDEMU:SUBU|FDC:FD|R[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "SUBunitsDEMU:SUBU|FDC:FD|R[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "SUBunitsDEMU:SUBU|FDC:FD|R[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "SUBunitsDEMU:SUBU|FDC:FD|R[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "SUBunitsDEMU:SUBU|FDC:FD|SDIR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "SUBunitsDEMU:SUBU|FDC:FD|busy" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "SUBunitsDEMU:SUBU|FDC:FD|command[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "SUBunitsDEMU:SUBU|FDC:FD|command[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "SUBunitsDEMU:SUBU|FDC:FD|command[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "SUBunitsDEMU:SUBU|FDC:FD|command[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "SUBunitsDEMU:SUBU|FDC:FD|command[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_C" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCd0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCd1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCdc" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCi0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCi1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCic" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Cw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DATA" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DATAw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP4" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_H" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Hw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_N" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Nw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_R" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Rw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Syncd" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Synci" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Syncp" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_idle" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_seek" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_windex" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "SUBunitsDEMU:SUBU|FDC:FD|CRCGENN:CRCG|CRCZERO" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "SUBunitsDEMU:SUBU|FDC:FD|C[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "SUBunitsDEMU:SUBU|FDC:FD|C[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "SUBunitsDEMU:SUBU|FDC:FD|C[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "SUBunitsDEMU:SUBU|FDC:FD|C[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "SUBunitsDEMU:SUBU|FDC:FD|C[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "SUBunitsDEMU:SUBU|FDC:FD|C[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "SUBunitsDEMU:SUBU|FDC:FD|C[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "SUBunitsDEMU:SUBU|FDC:FD|C[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "SUBunitsDEMU:SUBU|FDC:FD|H[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "SUBunitsDEMU:SUBU|FDC:FD|H[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "SUBunitsDEMU:SUBU|FDC:FD|H[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "SUBunitsDEMU:SUBU|FDC:FD|H[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "SUBunitsDEMU:SUBU|FDC:FD|H[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "SUBunitsDEMU:SUBU|FDC:FD|H[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "SUBunitsDEMU:SUBU|FDC:FD|H[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "SUBunitsDEMU:SUBU|FDC:FD|H[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "SUBunitsDEMU:SUBU|FDC:FD|MF" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "SUBunitsDEMU:SUBU|FDC:FD|N[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "SUBunitsDEMU:SUBU|FDC:FD|N[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "SUBunitsDEMU:SUBU|FDC:FD|N[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "SUBunitsDEMU:SUBU|FDC:FD|N[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "SUBunitsDEMU:SUBU|FDC:FD|N[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "SUBunitsDEMU:SUBU|FDC:FD|N[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "SUBunitsDEMU:SUBU|FDC:FD|N[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "SUBunitsDEMU:SUBU|FDC:FD|N[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "SUBunitsDEMU:SUBU|FDC:FD|R[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "SUBunitsDEMU:SUBU|FDC:FD|R[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "SUBunitsDEMU:SUBU|FDC:FD|R[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "SUBunitsDEMU:SUBU|FDC:FD|R[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "SUBunitsDEMU:SUBU|FDC:FD|R[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "SUBunitsDEMU:SUBU|FDC:FD|R[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "SUBunitsDEMU:SUBU|FDC:FD|R[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "SUBunitsDEMU:SUBU|FDC:FD|R[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "SUBunitsDEMU:SUBU|FDC:FD|SDIR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "SUBunitsDEMU:SUBU|FDC:FD|bitwidth[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "SUBunitsDEMU:SUBU|FDC:FD|busy" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "SUBunitsDEMU:SUBU|FDC:FD|cPCN[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "SUBunitsDEMU:SUBU|FDC:FD|command[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "SUBunitsDEMU:SUBU|FDC:FD|command[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "SUBunitsDEMU:SUBU|FDC:FD|command[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "SUBunitsDEMU:SUBU|FDC:FD|command[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "SUBunitsDEMU:SUBU|FDC:FD|command[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_C" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCd0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCd1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCdc" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCi0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCi1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_CRCic" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Cw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DAM3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DATA" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_DATAw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_GAP4" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_H" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Hw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IAM3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_IM3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_N" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Nw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_R" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Rw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Syncd" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Synci" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_Syncp" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_idle" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_seek" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "SUBunitsDEMU:SUBU|FDC:FD|execstate.es_windex" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|DetMA1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|DetMC2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXED" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[145] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[146] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[147] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[148] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[149] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[150] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[151] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[152] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[153] -to "SUBunitsDEMU:SUBU|FDC:FD|sCB" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[154] -to "SUBunitsDEMU:SUBU|FDC:FD|sCM" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[155] -to "SUBunitsDEMU:SUBU|FDC:FD|sDD" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[156] -to "SUBunitsDEMU:SUBU|FDC:FD|sDE" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[157] -to "SUBunitsDEMU:SUBU|FDC:FD|sDIO" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[158] -to "SUBunitsDEMU:SUBU|FDC:FD|sDIOc" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[159] -to "SUBunitsDEMU:SUBU|FDC:FD|sDIOd" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[160] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[161] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[162] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[163] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[164] -to "SUBunitsDEMU:SUBU|FDC:FD|sEN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[165] -to "SUBunitsDEMU:SUBU|FDC:FD|sHD" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[166] -to "SUBunitsDEMU:SUBU|FDC:FD|sIC[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[167] -to "SUBunitsDEMU:SUBU|FDC:FD|sIC[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[168] -to "SUBunitsDEMU:SUBU|FDC:FD|sMA" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[169] -to "SUBunitsDEMU:SUBU|FDC:FD|sND" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[170] -to "SUBunitsDEMU:SUBU|FDC:FD|sNW" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[171] -to "SUBunitsDEMU:SUBU|FDC:FD|sOR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[172] -to "SUBunitsDEMU:SUBU|FDC:FD|sRQM" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[173] -to "SUBunitsDEMU:SUBU|FDC:FD|sSE" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[174] -to "SUBunitsDEMU:SUBU|FDC:FD|sSH" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[175] -to "SUBunitsDEMU:SUBU|FDC:FD|sUS[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[176] -to "SUBunitsDEMU:SUBU|FDC:FD|sUS[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[177] -to "SUBunitsDEMU:SUBU|FDC:FD|sWC" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[178] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[179] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[180] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[181] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[182] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[183] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[184] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[185] -to "SUBunitsDEMU:SUBU|FDC:FD|usel[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[186] -to "SUBunitsDEMU:SUBU|FDC:FD|usel[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[187] -to "SUBunitsDEMU:SUBU|FD_DS0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[188] -to "SUBunitsDEMU:SUBU|FD_DS1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[189] -to "SUBunitsDEMU:SUBU|FD_MOTOR0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[190] -to "SUBunitsDEMU:SUBU|FD_MOTOR1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[191] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[192] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[193] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[194] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[195] -to "SUBunitsDEMU:SUBU|MTsave:MTS0|EN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[196] -to "SUBunitsDEMU:SUBU|MTsave:MTS0|MTOUT" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[197] -to "SUBunitsDEMU:SUBU|MTsave:MTS0|SAVEON" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[198] -to "SUBunitsDEMU:SUBU|MTsave:MTS1|EN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[199] -to "SUBunitsDEMU:SUBU|MTsave:MTS1|MTOUT" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[200] -to "SUBunitsDEMU:SUBU|MTsave:MTS1|SAVEON" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[201] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|DSKCHGn" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[202] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[203] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[204] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[205] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[206] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|USEL[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[207] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|USEL[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[208] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|beat" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[209] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[210] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[211] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[212] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[213] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[214] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[215] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[216] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[217] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[218] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[219] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[220] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[221] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[222] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[223] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[224] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[225] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[226] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[227] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[228] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[229] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[230] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[231] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[232] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[233] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[234] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[235] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[236] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[237] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[238] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[239] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[240] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[241] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[242] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[243] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[244] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[245] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[246] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[247] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[248] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[249] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[250] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[251] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[252] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[253] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[254] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[255] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[256] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[257] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[258] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[259] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[260] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[261] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[262] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[263] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[264] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[265] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[266] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|I2TBUSY" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[267] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|I2TREQ" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[268] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[269] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[270] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[271] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[272] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[273] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[274] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[275] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[276] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[277] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[278] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[279] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[280] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[281] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[282] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[283] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[284] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[285] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[286] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[287] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[288] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[289] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[290] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[291] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[292] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[293] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[294] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[295] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[296] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[297] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[298] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[299] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[300] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[301] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[302] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[303] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[304] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[305] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[306] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[307] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|T2IBUSY" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[308] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|T2IREQ" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[309] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[310] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[311] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[312] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[313] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[314] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[315] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[316] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[317] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[318] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[319] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[320] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[321] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[322] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[323] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[324] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[325] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[326] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[327] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[328] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[329] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[330] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[331] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[332] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[333] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[334] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[335] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[336] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[337] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[338] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[339] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[340] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[341] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[342] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[343] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[344] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[345] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[346] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[347] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[348] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|convside_export" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[349] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[350] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[351] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[352] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[353] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[354] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[355] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[356] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[357] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[358] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[359] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[360] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "SUBunitsDEMU:SUBU|FDC:FD|headseek:hds0|current[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|DetMA1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|DetMC2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|RXED" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "SUBunitsDEMU:SUBU|FDC:FD|mfmdem:MFMD|curlen[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "SUBunitsDEMU:SUBU|FDC:FD|rxC[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "SUBunitsDEMU:SUBU|FDC:FD|rxH[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "SUBunitsDEMU:SUBU|FDC:FD|rxN[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "SUBunitsDEMU:SUBU|FDC:FD|rxR[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "SUBunitsDEMU:SUBU|FDC:FD|sCB" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "SUBunitsDEMU:SUBU|FDC:FD|sCM" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[155] -to "SUBunitsDEMU:SUBU|FDC:FD|sDD" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[156] -to "SUBunitsDEMU:SUBU|FDC:FD|sDE" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[157] -to "SUBunitsDEMU:SUBU|FDC:FD|sDIO" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[158] -to "SUBunitsDEMU:SUBU|FDC:FD|sDIOc" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[159] -to "SUBunitsDEMU:SUBU|FDC:FD|sDIOd" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[160] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[161] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[162] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[163] -to "SUBunitsDEMU:SUBU|FDC:FD|sDxB[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[164] -to "SUBunitsDEMU:SUBU|FDC:FD|sEN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[165] -to "SUBunitsDEMU:SUBU|FDC:FD|sHD" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[166] -to "SUBunitsDEMU:SUBU|FDC:FD|sIC[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[167] -to "SUBunitsDEMU:SUBU|FDC:FD|sIC[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[168] -to "SUBunitsDEMU:SUBU|FDC:FD|sMA" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[169] -to "SUBunitsDEMU:SUBU|FDC:FD|sND" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[170] -to "SUBunitsDEMU:SUBU|FDC:FD|sNW" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[171] -to "SUBunitsDEMU:SUBU|FDC:FD|sOR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[172] -to "SUBunitsDEMU:SUBU|FDC:FD|sRQM" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[173] -to "SUBunitsDEMU:SUBU|FDC:FD|sSE" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[174] -to "SUBunitsDEMU:SUBU|FDC:FD|sSH" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[175] -to "SUBunitsDEMU:SUBU|FDC:FD|sUS[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[176] -to "SUBunitsDEMU:SUBU|FDC:FD|sUS[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[177] -to "SUBunitsDEMU:SUBU|FDC:FD|sWC" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[178] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[179] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[180] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[181] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[182] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[183] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[184] -to "SUBunitsDEMU:SUBU|FDC:FD|seek_cyl0[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[185] -to "SUBunitsDEMU:SUBU|FDC:FD|usel[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[186] -to "SUBunitsDEMU:SUBU|FDC:FD|usel[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[187] -to "SUBunitsDEMU:SUBU|FD_DS0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[188] -to "SUBunitsDEMU:SUBU|FD_DS1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[189] -to "SUBunitsDEMU:SUBU|FD_MOTOR0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[190] -to "SUBunitsDEMU:SUBU|FD_MOTOR1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[191] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[192] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[193] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[194] -to "SUBunitsDEMU:SUBU|IO_WRS:IOf4|bit3" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[195] -to "SUBunitsDEMU:SUBU|MTsave:MTS0|EN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[196] -to "SUBunitsDEMU:SUBU|MTsave:MTS0|MTOUT" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[197] -to "SUBunitsDEMU:SUBU|MTsave:MTS0|SAVEON" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[198] -to "SUBunitsDEMU:SUBU|MTsave:MTS1|EN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[199] -to "SUBunitsDEMU:SUBU|MTsave:MTS1|MTOUT" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[200] -to "SUBunitsDEMU:SUBU|MTsave:MTS1|SAVEON" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[201] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|DSKCHGn" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[202] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[203] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[204] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[205] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|READYv[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[206] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|USEL[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[207] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|USEL[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[208] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|beat" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[209] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[210] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[211] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[212] -to "SUBunitsDEMU:SUBU|dc2ry:d2r|rdy[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[213] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[214] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[215] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[216] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[217] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[218] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[219] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[220] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[221] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram0|q_b[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[222] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[223] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[224] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[225] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[226] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[227] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[228] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[229] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[230] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|FDtrackram:tram1|q_b[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[231] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[232] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[233] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[234] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[235] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[236] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[237] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|RDTRACKNUM[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[238] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[239] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[240] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[241] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[242] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[243] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[244] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|WRTRACKNUM[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[245] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[246] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[247] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[248] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[249] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[250] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[251] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[252] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[253] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[254] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[255] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[256] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[257] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[258] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curpos[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[259] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[260] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[261] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[262] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[263] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[264] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[265] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|curtrack0[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[266] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|I2TBUSY" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[267] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|I2TREQ" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[268] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[269] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[270] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[271] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[272] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[273] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[274] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[275] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[276] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[277] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[278] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[279] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[280] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[281] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMADDR[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[282] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[283] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[284] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[285] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[286] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[287] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[288] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[289] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMRDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[290] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[291] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[292] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[293] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[294] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[295] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[296] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[297] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[298] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|IRAMWR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[299] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[300] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[301] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[302] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[303] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[304] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[305] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[306] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|SECTCOUNT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[307] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|T2IBUSY" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[308] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|T2IREQ" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[309] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[310] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[311] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[312] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[313] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[314] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[315] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[316] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[317] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[318] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[319] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[320] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[321] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[322] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMADDR[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[323] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[324] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[325] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[326] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[327] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[328] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[329] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[330] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[331] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMRDAT[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[332] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[333] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[334] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[335] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[336] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[337] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[338] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[339] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[340] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWDAT[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[341] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|TRAMWR" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[342] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[343] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[344] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[345] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[346] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[347] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|FDemu:fde|fdtrackconv:conv0|state[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[348] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|convside_export" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[349] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[350] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[351] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[352] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdemuen_export[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[353] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[354] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[355] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[356] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel0_export[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[357] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[358] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[359] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[360] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|diskemu:mpu|fdsel1_export[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[361] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[362] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[363] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[364] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[365] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[366] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[367] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[368] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[369] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbrx" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[370] -to "SUBunitsDEMU:SUBU|intchk:CHK|en" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[361] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[362] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[363] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[364] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[365] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[366] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[367] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[368] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbdat[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[369] -to "SUBunitsDEMU:SUBU|diskemuunit:DSKE|kbrx" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[370] -to "SUBunitsDEMU:SUBU|intchk:CHK|en" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=371" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=371" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=1138" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=13706" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=56317" -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name MISC_FILE "\"PC88TOP.dpf\""
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE nrdet.vwf
+set_global_assignment -name VHDL_FILE sdramcde0cvDEMU2.vhd
+set_global_assignment -name VHDL_FILE Cyc5/pllCVdemu.vhd -library pllCVdemu
+set_global_assignment -name QIP_FILE Cyc5/pllCVdemu.qip
+set_global_assignment -name SOURCE_FILE Cyc5/pllCVdemu.cmp
+set_global_assignment -name QIP_FILE meminit.qip
+set_global_assignment -name VHDL_FILE mkgapsync.vhd
+set_global_assignment -name VHDL_FILE FDtrackram.vhd
+set_global_assignment -name QIP_FILE FDtrackram.qip
+set_global_assignment -name VHDL_FILE fdtrackconv.vhd
+set_global_assignment -name VHDL_FILE FDemu.vhd
+set_global_assignment -name VHDL_FILE diskemuunit.vhd
+set_global_assignment -name QSYS_FILE diskemu.qsys
+set_global_assignment -name VHDL_FILE Cyc5/asmicont.vhd
+set_global_assignment -name VHDL_FILE S88DE0CV.vhd
+set_global_assignment -name QIP_FILE Cyc5/pllCV.qip
+set_global_assignment -name VHDL_FILE Cyc5/pllCV.vhd -library pllCV
+set_global_assignment -name VHDL_FILE I2C/I2C_pkg.vhd
+set_global_assignment -name VHDL_FILE I2C/I2CIF.vhd
+set_global_assignment -name VHDL_FILE sdramcde0.vhd
+set_global_assignment -name VHDL_FILE sdramc5.vhd
+set_global_assignment -name QIP_FILE pll2x.qip
+set_global_assignment -name VHDL_FILE LIB/addsat.vhd
+set_global_assignment -name VHDL_FILE LIB/g_srff.vhd
+set_global_assignment -name VHDL_FILE LIB/HEX2SEG.vhd
+set_global_assignment -name VHDL_FILE LIB/signext.vhd
+set_global_assignment -name VHDL_FILE LIB/CRCGENN.vhd
+set_global_assignment -name VHDL_FILE LIB/sftdiv.vhd
+set_global_assignment -name VHDL_FILE LIB/sftgen.vhd
+set_global_assignment -name VHDL_FILE LIB/HEX2SEGn.vhd
+set_global_assignment -name VHDL_FILE LIB/sftclk.vhd
+set_global_assignment -name VHDL_FILE LIB/PARITYG.vhd
+set_global_assignment -name VHDL_FILE LIB/PARGEN.vhd
+set_global_assignment -name VHDL_FILE LIB/unchchata.vhd
+set_global_assignment -name VHDL_FILE LIB/delayer.vhd
+set_global_assignment -name VHDL_FILE LIB/digifilters.vhd
+set_global_assignment -name VHDL_FILE LIB/digifilter.vhd
+set_global_assignment -name VHDL_FILE LIB/deltasigmadac.vhd
+set_global_assignment -name VHDL_FILE LIB/clkdiv.vhd
+set_global_assignment -name VHDL_FILE LIB/intchk.vhd
+set_global_assignment -name VHDL_FILE delayon.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_ALU.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_MCode.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_Pack.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80_Reg.vhd
+set_global_assignment -name VHDL_FILE CPU/T80/T80a.vhd
+set_global_assignment -name VHDL_FILE crctest.vhd
+set_global_assignment -name VHDL_FILE FDC.vhd
+set_global_assignment -name VHDL_FILE FDC/FDC_sectinfo.vhd
+set_global_assignment -name VHDL_FILE FDC/FDC_timing.vhd
+set_global_assignment -name VHDL_FILE FDC/fmdem.vhd
+set_global_assignment -name VHDL_FILE FDC/fmmod.vhd
+set_global_assignment -name VHDL_FILE FDC/headseek.vhd
+set_global_assignment -name VHDL_FILE FDC/mfmdem.vhd
+set_global_assignment -name VHDL_FILE FDC/mfmmod.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE crctestr.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE crctest.vwf
+set_global_assignment -name VHDL_FILE FDC/dc2ry.vhd
+set_global_assignment -name VHDL_FILE FDC/nrdet.vhd
+set_global_assignment -name VHDL_FILE FDC/MTsave.vhd
+set_global_assignment -name VHDL_FILE RAMTEST.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE PC88TOP.vwf
+set_global_assignment -name VHDL_FILE PS2KB/KBTBLE0.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBTBLN.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBIF.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBIO.vhd
+set_global_assignment -name VHDL_FILE PS2KB/KBMAP.vhd
+set_global_assignment -name QIP_FILE PS2KB/KBIO.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE kbif.vwf
+set_global_assignment -name QIP_FILE PS2KB/KBTBLN.qip
+set_global_assignment -name QIP_FILE PS2KB/KBTBLE0.qip
+set_global_assignment -name VHDL_FILE VIDEO/CRTCP.vhd
+set_global_assignment -name VHDL_FILE VIDEO/synccont.vhd
+set_global_assignment -name VHDL_FILE VIDEO/textscr.vhd
+set_global_assignment -name VHDL_FILE VIDEO/video_timing_pkg.vhd
+set_global_assignment -name VHDL_FILE VIDEO/VTIMING.vhd
+set_global_assignment -name VHDL_FILE VIDEO/TRAMCONV.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE TRAMCONV.vwf
+set_global_assignment -name VHDL_FILE VIDEO/GraphALU.vhd
+set_global_assignment -name VHDL_FILE VIDEO/GRAPHSCR.vhd
+set_global_assignment -name VHDL_FILE VIDEO/CRTCREGS.vhd
+set_global_assignment -name QIP_FILE VIDEO/graphbuf.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE CRTC2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE vtiming.vwf
+set_global_assignment -name VHDL_FILE VIDEO/DBGLINE.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE dbgline.vwf
+set_global_assignment -name VHDL_FILE VIDEO/textscr2.vhd
+set_global_assignment -name VHDL_FILE USART/e8251.vhd
+set_global_assignment -name VHDL_FILE USART/rxframe.vhd
+set_global_assignment -name VHDL_FILE USART/txframe.vhd
+set_global_assignment -name VHDL_FILE bios1.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE memorymap.vwf
+set_global_assignment -name VHDL_FILE bios.vhd
+set_global_assignment -name VHDL_FILE pll4x.vhd
+set_global_assignment -name VHDL_FILE SPI/SPI_IF.vhd
+set_global_assignment -name QIP_FILE TEXTRAM.qip
+set_global_assignment -name QIP_FILE fontrom.qip
+set_global_assignment -name VHDL_FILE fontrom.vhd
+set_global_assignment -name VHDL_FILE fgraphrom.vhd
+set_global_assignment -name QIP_FILE fgraphrom.qip
+set_global_assignment -name VHDL_FILE IO_RD.vhd
+set_global_assignment -name VHDL_FILE IO_WR.vhd
+set_global_assignment -name VHDL_FILE IO_RW.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE IORD.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T80a.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE INTCONT.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TRAM.vwf
+set_global_assignment -name VHDL_FILE SUBunit/mmapsub.vhd
+set_global_assignment -name VHDL_FILE SUBunits.vhd
+set_global_assignment -name VHDL_FILE SUBunit/INTSUB.vhd
+set_global_assignment -name VHDL_FILE SUBunit/subrom.vhd
+set_global_assignment -name QIP_FILE pll4x.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE RAMTEST.vwf
+set_global_assignment -name VHDL_FILE cpuclk.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE pll4x.vwf
+set_global_assignment -name VHDL_FILE sound/OPN/OPNREG.vhd
+set_global_assignment -name VHDL_FILE sound/OPN/OPN.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/envelope_pkg.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/envcont.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/TLtbl.vhd
+set_global_assignment -name QIP_FILE sound/FMcommon/TLtbl.qip
+set_global_assignment -name VHDL_FILE sound/FMcommon/muls16xu16.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/MUL16x17.vhd
+set_global_assignment -name VHDL_FILE sound/FMcommon/FMreg.vhd
+set_global_assignment -name VHDL_FILE sound/beeposc.vhd
+set_global_assignment -name VHDL_FILE sound/cosnrom.vhd
+set_global_assignment -name VHDL_FILE sound/mult16.vhd
+set_global_assignment -name VHDL_FILE sound/sinnrom.vhd
+set_global_assignment -name VHDL_FILE sound/sintbl.vhd
+set_global_assignment -name VHDL_FILE sound/sinwrom.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE OPN.vwf
+set_global_assignment -name QIP_FILE sound/OPN/ram16x32.qip
+set_global_assignment -name VHDL_FILE sound/OPN/ram16x32.vhd
+set_global_assignment -name VHDL_FILE sound/noisegen.vhd
+set_global_assignment -name VHDL_FILE CPUTEST.vhd
+set_global_assignment -name QIP_FILE testrom.qip
+set_global_assignment -name QIP_FILE testram.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE cputest.vwf
+set_global_assignment -name SOURCE_FILE mtest.asm
+set_global_assignment -name SOURCE_FILE itest.asm
+set_global_assignment -name VHDL_FILE testrom.vhd
+set_global_assignment -name VHDL_FILE testram.vhd
+set_global_assignment -name VHDL_FILE S88TOP.vhd
+set_global_assignment -name VHDL_FILE IO_WRS.vhd
+set_global_assignment -name VHDL_FILE IO_RWS.vhd
+set_global_assignment -name VHDL_FILE memorymaps.vhd
+set_global_assignment -name VHDL_FILE TDMAREGS.vhd
+set_global_assignment -name VHDL_FILE RTC/rtc1990.vhd
+set_global_assignment -name VHDL_FILE RTC/rtcbody.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE rtcbody.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE rtc1990.vwf
+set_global_assignment -name VHDL_FILE rtc/rtc4990.vhd
+set_global_assignment -name VERILOG_FILE rtc.v
+set_global_assignment -name VHDL_FILE MONLED.vhd
+set_global_assignment -name VHDL_FILE palette.vhd
+set_global_assignment -name VHDL_FILE KANJIROM.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE KANJIROM.vwf
+set_global_assignment -name VHDL_FILE INTCONTS.vhd
+set_global_assignment -name VHDL_FILE seg7.vhd
+set_global_assignment -name VHDL_FILE debboard.vhd
+set_global_assignment -name VHDL_FILE FDtiming.vhd
+set_global_assignment -name VHDL_FILE RAMCLR.vhd
+set_global_assignment -name VHDL_FILE IO_DETAC.vhd
+set_global_assignment -name VHDL_FILE i8255.vhd
+set_global_assignment -name VHDL_FILE CMT/cmtmod.vhd
+set_global_assignment -name VHDL_FILE CMT/cmtdem.vhd
+set_global_assignment -name SOURCE_FILE cputi0.asm
+set_global_assignment -name VECTOR_WAVEFORM_FILE cputestnw.vwf
+set_global_assignment -name VHDL_FILE FDCTEST.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE FDCTEST.vwf
+set_global_assignment -name VHDL_FILE FDCTEST2.vhd
+set_global_assignment -name VHDL_FILE trammaps.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE pll2x.vwf
+set_global_assignment -name VHDL_FILE RAMTESTDE0.vhd
+set_global_assignment -name SIGNALTAP_FILE pc88de0.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_CPU.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_FDMODEM.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_FDC.stp
+set_global_assignment -name SIGNALTAP_FILE OPN.stp
+set_global_assignment -name VECTOR_WAVEFORM_FILE muls16xu16.vwf
+set_global_assignment -name SIGNALTAP_FILE pc88de0_SUB.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_IO.stp
+set_global_assignment -name SIGNALTAP_FILE MTsave.stp
+set_global_assignment -name SIGNALTAP_FILE e8251.stp
+set_global_assignment -name SIGNALTAP_FILE pc88de0_IO_COM.stp
+set_global_assignment -name SIGNALTAP_FILE ps2kb.stp
+set_global_assignment -name VHDL_FILE rtc/I2Crtc.vhd
+set_global_assignment -name SIGNALTAP_FILE I2C.stp
+set_global_assignment -name SIGNALTAP_FILE OPN_SG.stp
+set_global_assignment -name SIGNALTAP_FILE OPN_FM.stp
+set_global_assignment -name SIGNALTAP_FILE PS2KB.stp
+set_global_assignment -name VHDL_FILE Cyc5/romcopy.vhd
+set_global_assignment -name SIGNALTAP_FILE s88de0v.stp
+set_global_assignment -name SIGNALTAP_FILE spiif.stp
+set_global_assignment -name VHDL_FILE S88DE0CVDEMU.vhd
+set_global_assignment -name VHDL_FILE SUBunitsDEMU.vhd
+set_global_assignment -name SLD_FILE db/FDemu_auto_stripped.stp
+set_global_assignment -name SEARCH_PATH CMT/ -tag from_archive
+set_global_assignment -name SEARCH_PATH CPU/T80/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/pllCV/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/pllCVdemu/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Cyc5/pllCVdemu_sim/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Doc/ -tag from_archive
+set_global_assignment -name SEARCH_PATH FDC/ -tag from_archive
+set_global_assignment -name SEARCH_PATH Font/ -tag from_archive
+set_global_assignment -name SEARCH_PATH HDMI/ -tag from_archive
+set_global_assignment -name SEARCH_PATH HDMI/hdmipll/ -tag from_archive
+set_global_assignment -name SEARCH_PATH I2C/ -tag from_archive
+set_global_assignment -name SEARCH_PATH LIB/ -tag from_archive
+set_global_assignment -name SEARCH_PATH PS2KB/ -tag from_archive
+set_global_assignment -name SEARCH_PATH RTC/ -tag from_archive
+set_global_assignment -name SEARCH_PATH SPI/ -tag from_archive
+set_global_assignment -name SEARCH_PATH SUBunit/ -tag from_archive
+set_global_assignment -name SEARCH_PATH USART/ -tag from_archive
+set_global_assignment -name SEARCH_PATH VIDEO/ -tag from_archive
+set_global_assignment -name SEARCH_PATH VIDEO/HDMI/ -tag from_archive
+set_global_assignment -name SEARCH_PATH db/ip/diskemu/ -tag from_archive
+set_global_assignment -name SEARCH_PATH db/ip/diskemu/submodules/ -tag from_archive
+set_global_assignment -name SEARCH_PATH diskemu.v2/ -tag from_archive
+set_global_assignment -name SEARCH_PATH diskemu.v2/doc/ -tag from_archive
+set_global_assignment -name SEARCH_PATH diskemu.v2/software/diskemu/mem_init/ -tag from_archive
+set_global_assignment -name SEARCH_PATH rtc/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/FMcommon/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/OPN/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/OPN/RHYTHM/ -tag from_archive
+set_global_assignment -name SEARCH_PATH sound/OPNAADPCM/ -tag from_archive
