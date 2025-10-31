@@ -1,0 +1,345 @@
+Restore Archived Project report for release-F68K_DE0CV_DEMU
+Fri Oct 31 16:19:43 2025
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Oct 31 16:19:43 2025 ;
+; Revision Name                   ; release-F68K_DE0CV_DEMU               ;
+; Top-level Entity Name           ; X68DE0CVDEMU2                         ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/D/FPGA/release-F68k_DE0CVDEMU.240509.qar' into the 'C:/D/FPGA/release-F68k_DE0CVDEMU.240509_restored/' directory
+Info: Generated report 'release-F68K_DE0CV_DEMU.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 116 warnings
+    Info: Peak virtual memory: 4857 megabytes
+    Info: Processing ended: Fri Oct 31 16:19:44 2025
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+
++----------------------------------------------------------+
+; Files Restored                                           ;
++----------------------------------------------------------+
+; File Name                                                ;
++----------------------------------------------------------+
+; qar_info.json                                            ;
+; CPU/tg68/VHDL/TG68.vhd                                   ;
+; CPU/tg68/VHDL/TG68_fast.vhd                              ;
+; FDC/FDC_sectinfo.vhd                                     ;
+; FDC/FDC_timing.vhd                                       ;
+; FDC/FDCs.vhd                                             ;
+; FDC/crctest.vhd                                          ;
+; FDC/dskchk.vhd                                           ;
+; FDC/dskchk2d.vhd                                         ;
+; FDC/fmdem.vhd                                            ;
+; FDC/fmmod.vhd                                            ;
+; FDC/headseek.vhd                                         ;
+; FDC/mfmdem.vhd                                           ;
+; FDC/mfmmod.vhd                                           ;
+; FDC/nrdet.vhd                                            ;
+; FDC/seekcont.vhd                                         ;
+; I2C/I2CIF.vhd                                            ;
+; I2C/I2C_pkg.vhd                                          ;
+; LIB/CRCGENN.vhd                                          ;
+; LIB/HEX2SEG.vhd                                          ;
+; LIB/HEX2SEGn.vhd                                         ;
+; LIB/PARGEN.vhd                                           ;
+; LIB/PARITYG.vhd                                          ;
+; LIB/addsat.vhd                                           ;
+; LIB/clkdiv.vhd                                           ;
+; LIB/clktx.vhd                                            ;
+; LIB/datfifo.vhd                                          ;
+; LIB/delayer.vhd                                          ;
+; LIB/delayon.vhd                                          ;
+; LIB/deltasigmadac.vhd                                    ;
+; LIB/digifilter.vhd                                       ;
+; LIB/digifilters.vhd                                      ;
+; LIB/e8255.vhd                                            ;
+; LIB/g_srff.vhd                                           ;
+; LIB/sftclk.vhd                                           ;
+; LIB/sftdiv.vhd                                           ;
+; LIB/sftgen.vhd                                           ;
+; LIB/sftnpn.vhd                                           ;
+; LIB/signext.vhd                                          ;
+; LIB/unchchata.vhd                                        ;
+; PS2IF/PS2IF.vhd                                          ;
+; SPI/SPI_IF.vhd                                           ;
+; USART/rxframe.vhd                                        ;
+; USART/txframe.vhd                                        ;
+; USART/txframenb.vhd                                      ;
+; VIDEO/CRTCX68TXT.vhd                                     ;
+; VIDEO/HDMI/tmds_enc.vhd                                  ;
+; VIDEO/VTIMINGX68.vhd                                     ;
+; VIDEO/font/font.mif                                      ;
+; VIDEO/font/fontrom.cmp                                   ;
+; VIDEO/font/fontrom.qip                                   ;
+; VIDEO/font/fontrom.vhd                                   ;
+; VIDEO/synccont.vhd                                       ;
+; VIDEO/textscrv.vhd                                       ;
+; VIDEO/video_timing_800x600_pkg.vhd                       ;
+; X68000/BIOS/IPLROM.hex                                   ;
+; X68000/BIOS/cgrom.hex                                    ;
+; X68000/DMAC/DMA63450.vhd                                 ;
+; X68000/DMAC/dma1ch.vhd                                   ;
+; X68000/Doc/keymap.xlsx                                   ;
+; X68000/Doc/pin-assign.xls                                ;
+; X68000/Doc/readme.txt                                    ;
+; X68000/FDtiming.vhd                                      ;
+; X68000/GPALETTE/gpram.cmp                                ;
+; X68000/GPALETTE/gpram.qip                                ;
+; X68000/GPALETTE/gpram.vhd                                ;
+; X68000/GPALETTE/grpal.vhd                                ;
+; X68000/HDMI/LVDStrans.bsf                                ;
+; X68000/HDMI/LVDStrans.cmp                                ;
+; X68000/HDMI/LVDStrans.inc                                ;
+; X68000/HDMI/LVDStrans.ppf                                ;
+; X68000/HDMI/LVDStrans.qip                                ;
+; X68000/HDMI/LVDStrans.vhd                                ;
+; X68000/HDMI/LVDStrans_inst.vhd                           ;
+; X68000/HDMI/hdmiconv.vhd                                 ;
+; X68000/INTcont.vhd                                       ;
+; X68000/IOcont.vhd                                        ;
+; X68000/MFP/GPIP.vhd                                      ;
+; X68000/MFP/KBIF/KBCONV.vhd                               ;
+; X68000/MFP/KBIF/ktble0_m.cmp                             ;
+; X68000/MFP/KBIF/ktble0_m.mif                             ;
+; X68000/MFP/KBIF/ktble0_m.qip                             ;
+; X68000/MFP/KBIF/ktble0_m.vhd                             ;
+; X68000/MFP/KBIF/ktbln_m.cmp                              ;
+; X68000/MFP/KBIF/ktbln_m.mif                              ;
+; X68000/MFP/KBIF/ktbln_m.qip                              ;
+; X68000/MFP/KBIF/ktbln_m.vhd                              ;
+; X68000/MFP/MFP.vhd                                       ;
+; X68000/MFP/MFPint.vhd                                    ;
+; X68000/MFP/MFPtimer.vhd                                  ;
+; X68000/MFP/MFPtimerS.vhd                                 ;
+; X68000/SASIIF/sasiif.vhd                                 ;
+; X68000/SASIIF/sasiio.vhd                                 ;
+; X68000/SASIIF/sasisd.vhd                                 ;
+; X68000/SCC/MOUSEIF/MOUSECONV.vhd                         ;
+; X68000/SCC/scc.vhd                                       ;
+; X68000/SCC/sccreg.vhd                                    ;
+; X68000/SDRAMC.vhd                                        ;
+; X68000/SPRITE/bgvram.vhd                                 ;
+; X68000/SPRITE/pcgram.vhd                                 ;
+; X68000/SPRITE/sline.vhd                                  ;
+; X68000/SPRITE/slinebuf.vhd                               ;
+; X68000/SPRITE/spritec.vhd                                ;
+; X68000/SPRITE/sprram.vhd                                 ;
+; X68000/SPRITE/sprreg.vhd                                 ;
+; X68000/SPRITE/sprregs.vhd                                ;
+; X68000/SRAML.mif                                         ;
+; X68000/SRAMU.mif                                         ;
+; X68000/TPalH.mif                                         ;
+; X68000/TPalL.mif                                         ;
+; X68000/X68DE0CVDEMU2.vhd                                 ;
+; X68000/X68mmap.vhd                                       ;
+; X68000/X68mmapCV.vhd                                     ;
+; X68000/asmicont.bsf                                      ;
+; X68000/asmicont.cmp                                      ;
+; X68000/asmicont.inc                                      ;
+; X68000/asmicont.qip                                      ;
+; X68000/asmicont.vhd                                      ;
+; X68000/asmicont_inst.vhd                                 ;
+; X68000/bwlatch.vhd                                       ;
+; X68000/cachecont.vhd                                     ;
+; X68000/cacheext.vhd                                      ;
+; X68000/cachesel.vhd                                      ;
+; X68000/cereg.vhd                                         ;
+; X68000/contcont.vhd                                      ;
+; X68000/contrast.vhd                                      ;
+; X68000/cycV/CACHEFLAG.cmp                                ;
+; X68000/cycV/CACHEFLAG.qip                                ;
+; X68000/cycV/CACHEFLAG.vhd                                ;
+; X68000/cycV/CACHEMEM.cmp                                 ;
+; X68000/cycV/CACHEMEM.qip                                 ;
+; X68000/cycV/CACHEMEM.vhd                                 ;
+; X68000/cycV/CACHEMEMN.vhd                                ;
+; X68000/cycV/CACHEMEMW.cmp                                ;
+; X68000/cycV/CACHEMEMW.qip                                ;
+; X68000/cycV/CACHEMEMW.vhd                                ;
+; X68000/cycV/CACHEMEMWH.vhd                               ;
+; X68000/cycV/CACHEMEMWN.vhd                               ;
+; X68000/cycV/CACHEMEMWQ.vhd                               ;
+; X68000/cycV/VLINEBUF.cmp                                 ;
+; X68000/cycV/VLINEBUF.qip                                 ;
+; X68000/cycV/VLINEBUF.vhd                                 ;
+; X68000/cycV/mainpll.qip                                  ;
+; X68000/cycV/nvmem.cmp                                    ;
+; X68000/cycV/nvmem.qip                                    ;
+; X68000/cycV/nvmem.vhd                                    ;
+; X68000/cycV/nvmeml.cmp                                   ;
+; X68000/cycV/nvmeml.qip                                   ;
+; X68000/cycV/nvmeml.vhd                                   ;
+; X68000/cycV/nvmemu.cmp                                   ;
+; X68000/cycV/nvmemu.qip                                   ;
+; X68000/cycV/nvmemu.vhd                                   ;
+; X68000/cycV/txtpram.cmp                                  ;
+; X68000/cycV/txtpram.qip                                  ;
+; X68000/cycV/txtpram.vhd                                  ;
+; X68000/cycV/vnmeml.cmp                                   ;
+; X68000/cycV/vnmeml.qip                                   ;
+; X68000/cycV/vnmeml.vhd                                   ;
+; X68000/mainpll.cmp                                       ;
+; X68000/mainpll.ppf                                       ;
+; X68000/mainpll.qip                                       ;
+; X68000/mainpll.vhd                                       ;
+; X68000/mainpllCVdemu.cmp                                 ;
+; X68000/mainpllCVdemu.qip                                 ;
+; X68000/mainpllCVdemu.vhd                                 ;
+; X68000/mainpllCVdemu/mainpllCVdemu_0002.qip              ;
+; X68000/mainpllCVdemu/mainpllCVdemu_0002.v                ;
+; X68000/memcont.vhd                                       ;
+; X68000/midiint_de0.stp                                   ;
+; X68000/mputest.vhd                                       ;
+; X68000/nvram.vhd                                         ;
+; X68000/output_file.cof                                   ;
+; X68000/pcmclk.vhd                                        ;
+; X68000/pwrcont.vhd                                       ;
+; X68000/ramreg.vhd                                        ;
+; X68000/rastercopy.vhd                                    ;
+; X68000/readflash.vhd                                     ;
+; X68000/romcopy.vhd                                       ;
+; X68000/txtpal.vhd                                        ;
+; X68000/txtpramh.cmp                                      ;
+; X68000/txtpramh.qip                                      ;
+; X68000/txtpramh.vhd                                      ;
+; X68000/txtpraml.cmp                                      ;
+; X68000/txtpraml.qip                                      ;
+; X68000/txtpraml.vhd                                      ;
+; X68000/v17/F68K_DE0CV_DEMU_AO.qsf                        ;
+; X68000/v17/F68k-de10nano.qsf                             ;
+; X68000/v17/F68k_DE0.qpf                                  ;
+; X68000/v17/F68k_DE0.qsf                                  ;
+; X68000/v17/F68k_DE0.sdc                                  ;
+; X68000/v17/F68k_DE0.vwf                                  ;
+; X68000/v17/F68k_DE0CV.qsf                                ;
+; X68000/v17/F68k_DE0CV_DEMU.qsf                           ;
+; X68000/v17/F68k_DE0CV_DEMU2.qsf                          ;
+; X68000/v17/F68k_MiSTer.qsf                               ;
+; X68000/v17/F68k_MiSTerFDC.qsf                            ;
+; X68000/v17/F68l_MiSTerDEMU2.qsf                          ;
+; X68000/v17/SDtest.qsf                                    ;
+; X68000/v17/X68k_DE0CV.cof                                ;
+; X68000/v17/X68k_DE0CVDEMU.cof                            ;
+; X68000/v17/X68k_DE0CVDEMU2.cof                           ;
+; X68000/v17/X68k_DE0CVDEMU2_v17.cof                       ;
+; X68000/v17/diskemu.qsf                                   ;
+; X68000/v17/intchk.stp                                    ;
+; X68000/v17/ramtest.qsf                                   ;
+; X68000/v17/ramtest_assignment_defaults.qdf               ;
+; X68000/v17/release-F68K_DE0CV_DEMU.qsf                   ;
+; X68000/v17/release-F68kMiSTer.qsf                        ;
+; X68000/v17/release-F68kMiSTerFDC.qsf                     ;
+; X68000/v17/release-F68k_DE0CV.qsf                        ;
+; X68000/v17/release-X68k_DE0CV.cof                        ;
+; X68000/v17/release_X68k_DE0CV_DEMU.cof                   ;
+; X68000/vcaddr_pkg.vhd                                    ;
+; X68000/vcreg.vhd                                         ;
+; X68000/vidcont.vhd                                       ;
+; X68000/vrcack.vhd                                        ;
+; X68000/windrv.vhd                                        ;
+; X68000/wrreg.vhd                                         ;
+; diskemu.v2/FDemu.vhd                                     ;
+; diskemu.v2/FDtrackram.cmp                                ;
+; diskemu.v2/FDtrackram.vhd                                ;
+; diskemu.v2/diskemu.qsys                                  ;
+; diskemu.v2/diskemu.sopcinfo                              ;
+; diskemu.v2/diskemuunit.vhd                               ;
+; diskemu.v2/fdcopy.vhd                                    ;
+; diskemu.v2/fdtrackconv.vhd                               ;
+; diskemu.v2/mkgapsync.vhd                                 ;
+; diskemu.v2/software/diskemu/mem_init/diskemu_mainmem.hex ;
+; diskemu.v2/software/diskemu/mem_init/meminit.qip         ;
+; diskemu.v2/software/diskemu/mem_init/sramdefault.hex     ;
+; diskemu.v2/software/nios-src.zip                         ;
+; diskemu.v2/sramdefault.hex                               ;
+; rtc/I2Crtc.vhd                                           ;
+; rtc/rp5c15.vhd                                           ;
+; rtc/rtcbody.vhd                                          ;
+; sound/FMcommon/MUL16x17.qip                              ;
+; sound/FMcommon/MUL16x17.vhd                              ;
+; sound/FMcommon/TL.mif                                    ;
+; sound/FMcommon/TLtbl.qip                                 ;
+; sound/FMcommon/TLtbl.vhd                                 ;
+; sound/FMcommon/envcont.vhd                               ;
+; sound/FMcommon/envelope_pkg.vhd                          ;
+; sound/FMcommon/envtest.vhd                               ;
+; sound/FMcommon/fmparram.vhd                              ;
+; sound/FMcommon/muls16xu16.vhd                            ;
+; sound/OPM/KEY2FNUM_M.cmp                                 ;
+; sound/OPM/KEY2FNUM_M.qip                                 ;
+; sound/OPM/KEY2FNUM_M.vhd                                 ;
+; sound/OPM/OPM.vhd                                        ;
+; sound/OPM/OPMcreg.vhd                                    ;
+; sound/OPM/OPMsreg.vhd                                    ;
+; sound/OPM/key2fnum_m.mif                                 ;
+; sound/OPM/parrmwram.vhd                                  ;
+; sound/adpcm6258/calcadpcm.vhd                            ;
+; sound/adpcm6258/e6258.vhd                                ;
+; sound/adpcm6258/tbl6258.cmp                              ;
+; sound/adpcm6258/tbl6258.mif                              ;
+; sound/adpcm6258/tbl6258.qip                              ;
+; sound/adpcm6258/tbl6258.vhd                              ;
+; sound/cosn.mif                                           ;
+; sound/cosnrom.qip                                        ;
+; sound/cosnrom.vhd                                        ;
+; sound/midiif/em3802.vhd                                  ;
+; sound/mult16.vhd                                         ;
+; sound/noisegen.vhd                                       ;
+; sound/sinn.mif                                           ;
+; sound/sinnrom.qip                                        ;
+; sound/sinnrom.vhd                                        ;
+; sound/sintbl.vhd                                         ;
+; sound/sinw.mif                                           ;
+; sound/sinwrom.qip                                        ;
+; sound/sinwrom.vhd                                        ;
++----------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
