@@ -303,7 +303,6 @@ set_location_assignment PIN_M21 -to "pHDMI_DAT1(n)"
 set_instance_assignment -name IO_STANDARD LVDS_E_3R -to pHDMI_DAT2
 set_location_assignment PIN_K22 -to "pHDMI_DAT2(n)"
 set_location_assignment PIN_G18 -to pDemuSw
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name MISC_FILE "\"PC88TOP.dpf\""
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE nrdet.vwf
 set_global_assignment -name VHDL_FILE addressmap_DE0CV_pkg.vhd
@@ -535,3 +534,4 @@ set_global_assignment -name SEARCH_PATH sound/FMcommon/ -tag from_archive
 set_global_assignment -name SEARCH_PATH sound/OPN/ -tag from_archive
 set_global_assignment -name SEARCH_PATH sound/OPN/RHYTHM/ -tag from_archive
 set_global_assignment -name SEARCH_PATH sound/OPNAADPCM/ -tag from_archive
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
