@@ -810,7 +810,6 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_global_assignment -name QIP_FILE ../../MiSTer/sys/pll_hdmi/pll_hdmi_0002.qip -library pll_hdmi
 set_global_assignment -name GENERATE_RBF_FILE ON
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name MISC_FILE "../\"PC88TOP.dpf\""
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ../FDC/nrdet.vwf
 set_global_assignment -name TEXT_FILE ../../diskemu.v2/doc/diskemu.txt
@@ -981,3 +980,4 @@ set_global_assignment -name VHDL_FILE ../IO_DETAC.vhd
 set_global_assignment -name VHDL_FILE ../FECcont.vhd
 set_global_assignment -name VHDL_FILE ../trammaps.vhd
 set_global_assignment -name SLD_FILE db/fdc_auto_stripped.stp
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

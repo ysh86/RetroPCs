@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-# Date created = 16:17:52  October 31, 2025
+# Date created = 09:51:15  October 31, 2025
 #
 # -------------------------------------------------------------------------- #
 #
@@ -129,14 +129,14 @@ set_global_assignment -name MUX_RESTRUCTURE Auto
 set_global_assignment -name MLAB_ADD_TIMING_CONSTRAINTS_FOR_MIXED_PORT_FEED_THROUGH_MODE_SETTING_DONT_CARE Off
 set_global_assignment -name ENABLE_IP_DEBUG Off
 set_global_assignment -name SAVE_DISK_SPACE On
-set_global_assignment -name OCP_HW_EVAL -value OFF
+set_global_assignment -name OCP_HW_EVAL Enable
 set_global_assignment -name DEVICE_FILTER_PACKAGE Any
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT Any
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE Any
 set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<None>"
 set_global_assignment -name VERILOG_INPUT_VERSION Verilog_2001
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_1993
-set_global_assignment -name FAMILY -value "Cyclone V"
+set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name TRUE_WYSIWYG_FLOW Off
 set_global_assignment -name SMART_COMPILE_IGNORES_TDC_FOR_STRATIX_PLL_CHANGES Off
 set_global_assignment -name STATE_MACHINE_PROCESSING Auto

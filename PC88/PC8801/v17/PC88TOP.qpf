@@ -18,17 +18,17 @@
 #
 # Quartus Prime
 # Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-# Date created = 09:51:17  October 31, 2025
+# Date created = 15:39:31  November 04, 2025
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "17.1"
-DATE = "09:51:17  October 31, 2025"
+DATE = "15:39:31  November 04, 2025"
 
 # Revisions
 
-PROJECT_REVISION = "release-MiSTerDemu"
 PROJECT_REVISION = "release-de0cvdemu2"
+PROJECT_REVISION = "release-MiSTerDemu"
 PROJECT_REVISION = "PC88MiSTer_DEMU2"
 PROJECT_REVISION = "PC88DE10nano_DEMU2"
 PROJECT_REVISION = "PC88DE0CV_DEMU2"

@@ -293,245 +293,218 @@ set_location_assignment PIN_M22 -to pHDMI_CLK
 set_location_assignment PIN_M16 -to pHDMI_PWR
 set_location_assignment PIN_M20 -to pHDMI_DAT1
 set_location_assignment PIN_N20 -to pHDMI_DAT0
-set_instance_assignment -name IO_STANDARD LVDS_E_3R -to pHDMI_CLK
+set_instance_assignment -name IO_STANDARD LVDS -to pHDMI_CLK
 set_location_assignment PIN_L22 -to "pHDMI_CLK(n)"
-set_instance_assignment -name IO_STANDARD LVDS_E_3R -to pHDMI_DAT0
+set_instance_assignment -name IO_STANDARD LVDS -to pHDMI_DAT0
 set_location_assignment PIN_N21 -to "pHDMI_DAT0(n)"
 set_instance_assignment -name IO_STANDARD LVDS -to "pHDMI_DAT0(n)"
-set_instance_assignment -name IO_STANDARD LVDS_E_3R -to pHDMI_DAT1
+set_instance_assignment -name IO_STANDARD LVDS -to pHDMI_DAT1
 set_location_assignment PIN_M21 -to "pHDMI_DAT1(n)"
-set_instance_assignment -name IO_STANDARD LVDS_E_3R -to pHDMI_DAT2
+set_instance_assignment -name IO_STANDARD LVDS -to pHDMI_DAT2
 set_location_assignment PIN_K22 -to "pHDMI_DAT2(n)"
-set_location_assignment PIN_G18 -to pDemuSw
-set_global_assignment -name MISC_FILE "\"PC88TOP.dpf\""
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE nrdet.vwf
-set_global_assignment -name VHDL_FILE addressmap_DE0CV_pkg.vhd
-set_global_assignment -name SOURCE_FILE Doc/ROM_address.xls
-set_global_assignment -name TEXT_FILE Doc/readme.txt
-set_global_assignment -name SOURCE_FILE "Doc/pin-assign_DE0.xls"
-set_global_assignment -name SOURCE_FILE Doc/keymap.xls
-set_global_assignment -name BINARY_FILE Font/graphfont.bin
-set_global_assignment -name TEXT_FILE diskemu.v2/doc/diskemu.txt
-set_global_assignment -name SOURCE_FILE niossrc.zip
+set_global_assignment -name MISC_FILE "../\"PC88TOP.dpf\""
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ../FDC/nrdet.vwf
+set_global_assignment -name VHDL_FILE ../addressmap_DE0CV_pkg.vhd
+set_global_assignment -name SOURCE_FILE ../Doc/ROM_address.xls
+set_global_assignment -name TEXT_FILE ../Doc/readme.txt
+set_global_assignment -name SOURCE_FILE "../Doc/pin-assign_DE0.xls"
+set_global_assignment -name SOURCE_FILE ../Doc/keymap.xls
+set_global_assignment -name BINARY_FILE ../Font/graphfont.bin
+set_global_assignment -name TEXT_FILE ../../diskemu.v2/doc/diskemu.txt
+set_global_assignment -name SOURCE_FILE ../../diskemu.v2/niossrc.zip
 set_global_assignment -name SOURCE_FILE "release-pc88de0cvdemu.cof"
-set_global_assignment -name QIP_FILE diskemu.v2/software/diskemu/mem_init/meminit.qip
-set_global_assignment -name VHDL_FILE diskemu.v2/mkgapsync.vhd
-set_global_assignment -name VHDL_FILE diskemu.v2/FDemu.vhd
-set_global_assignment -name VHDL_FILE diskemu.v2/fdcopy.vhd
-set_global_assignment -name VHDL_FILE diskemu.v2/diskemuunit.vhd
-set_global_assignment -name QSYS_FILE diskemu.v2/diskemu.qsys
-set_global_assignment -name HEX_FILE diskemu.v2/software/diskemu/mem_init/sramdefault.hex
-set_global_assignment -name HEX_FILE diskemu.v2/software/diskemu/mem_init/diskemu_mainmem.hex
-set_global_assignment -name VHDL_FILE SUBunit/SUBunitsDEMU2.vhd
-set_global_assignment -name VHDL_FILE S88DE0CVDEMU2.vhd
-set_global_assignment -name QIP_FILE Cyc5/pllCV.qip
-set_global_assignment -name VHDL_FILE Cyc5/pllCV.vhd -library pllCV
-set_global_assignment -name VHDL_FILE I2C/I2C_pkg.vhd
-set_global_assignment -name VHDL_FILE I2C/I2CIF.vhd
-set_global_assignment -name VHDL_FILE LIB/susmult.vhd
-set_global_assignment -name VHDL_FILE LIB/ssmult.vhd
-set_global_assignment -name VHDL_FILE LIB/e8255.vhd
-set_global_assignment -name VHDL_FILE LIB/clktx.vhd
-set_global_assignment -name VHDL_FILE LIB/average.vhd
-set_global_assignment -name VHDL_FILE LIB/addsat.vhd
-set_global_assignment -name VHDL_FILE LIB/g_srff.vhd
-set_global_assignment -name VHDL_FILE LIB/HEX2SEG.vhd
-set_global_assignment -name VHDL_FILE LIB/signext.vhd
-set_global_assignment -name VHDL_FILE LIB/CRCGENN.vhd
-set_global_assignment -name VHDL_FILE LIB/sftdiv.vhd
-set_global_assignment -name VHDL_FILE LIB/sftgen.vhd
-set_global_assignment -name VHDL_FILE LIB/HEX2SEGn.vhd
-set_global_assignment -name VHDL_FILE LIB/sftclk.vhd
-set_global_assignment -name VHDL_FILE LIB/PARITYG.vhd
-set_global_assignment -name VHDL_FILE LIB/PARGEN.vhd
-set_global_assignment -name VHDL_FILE LIB/unchchata.vhd
-set_global_assignment -name VHDL_FILE LIB/delayer.vhd
-set_global_assignment -name VHDL_FILE LIB/digifilters.vhd
-set_global_assignment -name VHDL_FILE LIB/digifilter.vhd
-set_global_assignment -name VHDL_FILE LIB/deltasigmadac.vhd
-set_global_assignment -name VHDL_FILE LIB/clkdiv.vhd
-set_global_assignment -name VHDL_FILE LIB/intchk.vhd
-set_global_assignment -name VHDL_FILE LIB/susftmul.vhd
-set_global_assignment -name VHDL_FILE LIB/shiftadd.vhd
-set_global_assignment -name VHDL_FILE LIB/sftmul.vhd
-set_global_assignment -name VHDL_FILE LIB/multi.vhd
-set_global_assignment -name VHDL_FILE CPU/T80/T80.vhd
-set_global_assignment -name VHDL_FILE CPU/T80/T80_ALU.vhd
-set_global_assignment -name VHDL_FILE CPU/T80/T80_MCode.vhd
-set_global_assignment -name VHDL_FILE CPU/T80/T80_Pack.vhd
-set_global_assignment -name VHDL_FILE CPU/T80/T80_Reg.vhd
-set_global_assignment -name VHDL_FILE CPU/T80/T80a.vhd
-set_global_assignment -name VHDL_FILE FDC/FDCs.vhd
-set_global_assignment -name VHDL_FILE FDC/FDC_sectinfo.vhd
-set_global_assignment -name VHDL_FILE FDC/FDC_timing.vhd
-set_global_assignment -name VHDL_FILE FDC/fmdem.vhd
-set_global_assignment -name VHDL_FILE FDC/fmmod.vhd
-set_global_assignment -name VHDL_FILE FDC/headseek.vhd
-set_global_assignment -name VHDL_FILE FDC/mfmdem.vhd
-set_global_assignment -name VHDL_FILE FDC/mfmmod.vhd
-set_global_assignment -name VHDL_FILE FDC/dc2ry.vhd
-set_global_assignment -name VHDL_FILE FDC/nrdet.vhd
-set_global_assignment -name VHDL_FILE FDC/MTsave.vhd
-set_global_assignment -name VHDL_FILE EDIDmon.vhd
-set_global_assignment -name VHDL_FILE PS2KB/KBTBLE0.vhd
-set_global_assignment -name VHDL_FILE PS2KB/KBTBLN.vhd
-set_global_assignment -name VHDL_FILE PS2KB/KBIF.vhd
-set_global_assignment -name VHDL_FILE PS2KB/KBIO.vhd
-set_global_assignment -name VHDL_FILE PS2KB/KBMAP.vhd
-set_global_assignment -name QIP_FILE PS2KB/KBIO.qip
-set_global_assignment -name QIP_FILE PS2KB/KBTBLN.qip
-set_global_assignment -name QIP_FILE PS2KB/KBTBLE0.qip
-set_global_assignment -name HEX_FILE PS2KB/kbtbln.hex
-set_global_assignment -name HEX_FILE PS2KB/kbtble0.hex
-set_global_assignment -name VHDL_FILE VIDEO/CRTCP.vhd
-set_global_assignment -name VHDL_FILE VIDEO/synccont2.vhd
-set_global_assignment -name VHDL_FILE VIDEO/synccont.vhd
-set_global_assignment -name VHDL_FILE VIDEO/textscr.vhd
-set_global_assignment -name VHDL_FILE VIDEO/video_timing_pkg.vhd
-set_global_assignment -name VHDL_FILE VIDEO/VTIMING.vhd
-set_global_assignment -name VHDL_FILE VIDEO/TRAMCONV.vhd
-set_global_assignment -name VHDL_FILE VIDEO/GraphALU.vhd
-set_global_assignment -name VHDL_FILE VIDEO/GRAPHSCR.vhd
-set_global_assignment -name VHDL_FILE VIDEO/CRTCREGS.vhd
-set_global_assignment -name QIP_FILE VIDEO/graphbuf.qip
-set_global_assignment -name VHDL_FILE VIDEO/DBGLINE.vhd
-set_global_assignment -name VHDL_FILE VIDEO/textscr2.vhd
-set_global_assignment -name VHDL_FILE VIDEO/HDMI/tmds_enc.vhd
-set_global_assignment -name VHDL_FILE VIDEO/HDMI/EDIDread.vhd
-set_global_assignment -name VHDL_FILE VIDEO/HDMI/EDID_pkg.vhd
-set_global_assignment -name VHDL_FILE HDMI/LVDStrans.vhd
-set_global_assignment -name QIP_FILE HDMI/LVDStrans.qip
-set_global_assignment -name QIP_FILE HDMI/hdmipll.qip
-set_global_assignment -name SOURCE_FILE HDMI/hdmipll.cmp
-set_global_assignment -name VHDL_FILE HDMI/hdmiconv.vhd
-set_global_assignment -name VHDL_FILE USART/e8251.vhd
-set_global_assignment -name VHDL_FILE USART/rxframe.vhd
-set_global_assignment -name VHDL_FILE USART/txframe.vhd
-set_global_assignment -name VHDL_FILE SPI/SPI_IF.vhd
-set_global_assignment -name QIP_FILE TEXTRAM.qip
-set_global_assignment -name VHDL_FILE sdramcde0cvDEMU2.vhd
-set_global_assignment -name VHDL_FILE IO_RD.vhd
-set_global_assignment -name VHDL_FILE IO_WR.vhd
-set_global_assignment -name VHDL_FILE IO_RW.vhd
-set_global_assignment -name VHDL_FILE IO_RDB.vhd
-set_global_assignment -name VHDL_FILE IO_WRB.vhd
-set_global_assignment -name VHDL_FILE SUBunit/mmapsub.vhd
-set_global_assignment -name VHDL_FILE SUBunit/INTSUB.vhd
-set_global_assignment -name VHDL_FILE SUBunit/subrom.vhd
-set_global_assignment -name VHDL_FILE sound/AY38910.vhd
-set_global_assignment -name VHDL_FILE sound/beeposc.vhd
-set_global_assignment -name VHDL_FILE sound/cosnrom.vhd
-set_global_assignment -name VHDL_FILE sound/mult16.vhd
-set_global_assignment -name VHDL_FILE sound/sinnrom.vhd
-set_global_assignment -name VHDL_FILE sound/sintbl.vhd
-set_global_assignment -name VHDL_FILE sound/sinwrom.vhd
-set_global_assignment -name MIF_FILE sound/sinw.mif
-set_global_assignment -name MIF_FILE sound/sinn.mif
-set_global_assignment -name MIF_FILE sound/cosn.mif
-set_global_assignment -name MIF_FILE sound/b7lev.mif
-set_global_assignment -name VHDL_FILE sound/b7lev.vhd
-set_global_assignment -name QIP_FILE sound/b7lev.qip
-set_global_assignment -name SOURCE_FILE sound/b7lev.cmp
-set_global_assignment -name VHDL_FILE sound/OPN/OPN.vhd
-set_global_assignment -name VHDL_FILE sound/OPN/OPNA.vhd
-set_global_assignment -name VHDL_FILE sound/OPN/OPNFM.vhd
-set_global_assignment -name QIP_FILE sound/OPN/OPNREG.qip
-set_global_assignment -name VHDL_FILE sound/OPN/OPNREG.vhd
-set_global_assignment -name VHDL_FILE TLtbl.vhd
-set_global_assignment -name QIP_FILE sound/OPN/ram16x32.qip
-set_global_assignment -name VHDL_FILE sound/OPN/ram16x32.vhd
-set_global_assignment -name VHDL_FILE FMreg.vhd
-set_global_assignment -name MIF_FILE sound/OPN/RHYTHM/20RIM.mif
-set_global_assignment -name MIF_FILE sound/OPN/RHYTHM/10TOM.mif
-set_global_assignment -name MIF_FILE sound/OPN/RHYTHM/08HH.mif
-set_global_assignment -name MIF_FILE sound/OPN/RHYTHM/04TOP.mif
-set_global_assignment -name MIF_FILE sound/OPN/RHYTHM/02SD.mif
-set_global_assignment -name MIF_FILE sound/OPN/RHYTHM/01BD.mif
-set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_20RIM.vhd
-set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_20RIM.qip
-set_global_assignment -name SOURCE_FILE sound/OPN/RHYTHM/ROM_20RIM.cmp
-set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_10TOM.vhd
-set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_10TOM.qip
-set_global_assignment -name SOURCE_FILE sound/OPN/RHYTHM/ROM_10TOM.cmp
-set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_08HH.vhd
-set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_08HH.qip
-set_global_assignment -name SOURCE_FILE sound/OPN/RHYTHM/ROM_08HH.cmp
-set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_04TOP.vhd
-set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_04TOP.qip
-set_global_assignment -name SOURCE_FILE sound/OPN/RHYTHM/ROM_04TOP.cmp
-set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_02SD.vhd
-set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_02SD.qip
-set_global_assignment -name SOURCE_FILE sound/OPN/RHYTHM/ROM_02SD.cmp
-set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/ROM_01BD.vhd
-set_global_assignment -name QIP_FILE sound/OPN/RHYTHM/ROM_01BD.qip
-set_global_assignment -name SOURCE_FILE sound/OPN/RHYTHM/ROM_01BD.cmp
-set_global_assignment -name VHDL_FILE sound/OPN/RHYTHM/OPNARHYTHM.vhd
-set_global_assignment -name VHDL_FILE sound/OPNAADPCM/PCMTIMING.vhd
-set_global_assignment -name VHDL_FILE sound/OPNAADPCM/CALCOPNAADPCM_sft.vhd
-set_global_assignment -name VHDL_FILE sound/OPNAADPCM/OPNAADPCM.vhd
-set_global_assignment -name VHDL_FILE sound/FMcommon/TLtbl.vhd
-set_global_assignment -name QIP_FILE sound/FMcommon/TLtbl.qip
-set_global_assignment -name VHDL_FILE sound/FMcommon/muls16xu16.vhd
-set_global_assignment -name VHDL_FILE sound/FMcommon/MUL16x17.vhd
-set_global_assignment -name VHDL_FILE sound/FMcommon/FMreg.vhd
-set_global_assignment -name VHDL_FILE sound/FMcommon/envtest.vhd
-set_global_assignment -name VHDL_FILE sound/FMcommon/envelope_pkg.vhd
-set_global_assignment -name VHDL_FILE sound/FMcommon/envcont.vhd
-set_global_assignment -name VHDL_FILE sound/noisegen.vhd
-set_global_assignment -name VHDL_FILE RTC/rtc1990.vhd
-set_global_assignment -name VHDL_FILE RTC/rtcbody.vhd
-set_global_assignment -name VHDL_FILE rtc/rtc4990.vhd
-set_global_assignment -name VHDL_FILE rtc/I2Crtc.vhd
-set_global_assignment -name VHDL_FILE FDtiming.vhd
-set_global_assignment -name VHDL_FILE FECcont.vhd
-set_global_assignment -name VHDL_FILE INTCONTS.vhd
-set_global_assignment -name VHDL_FILE IO_WRS.vhd
-set_global_assignment -name VHDL_FILE IO_RWS.vhd
-set_global_assignment -name VHDL_FILE IO_DETAC.vhd
-set_global_assignment -name VHDL_FILE KANJIROM.vhd
-set_global_assignment -name VHDL_FILE memorymaps.vhd
-set_global_assignment -name VHDL_FILE rampalette.vhd
-set_global_assignment -name VHDL_FILE palette.vhd
-set_global_assignment -name VHDL_FILE RAMCLR.vhd
-set_global_assignment -name VHDL_FILE TDMAREGS.vhd
-set_global_assignment -name VHDL_FILE trammaps.vhd
-set_global_assignment -name VHDL_FILE CMT/cmtmod.vhd
-set_global_assignment -name VHDL_FILE CMT/cmtdem.vhd
-set_global_assignment -name VHDL_FILE Cyc5/romcopy.vhd
-set_global_assignment -name VHDL_FILE Cyc5/asmicont.vhd
-set_global_assignment -name QIP_FILE Cyc5/pllCVdemu.qip
-set_global_assignment -name SIP_FILE Cyc5/pllCVdemu.sip
+set_global_assignment -name QIP_FILE ../../diskemu.v2/software/diskemu/mem_init/meminit.qip
+set_global_assignment -name VHDL_FILE ../../diskemu.v2/mkgapsync.vhd
+set_global_assignment -name VHDL_FILE ../../diskemu.v2/FDemu.vhd
+set_global_assignment -name VHDL_FILE ../../diskemu.v2/fdcopy.vhd
+set_global_assignment -name VHDL_FILE ../../diskemu.v2/diskemuunit.vhd
+set_global_assignment -name QSYS_FILE ../../diskemu.v2/diskemu.qsys
+set_global_assignment -name HEX_FILE ../../diskemu.v2/software/diskemu/mem_init/sramdefault.hex
+set_global_assignment -name HEX_FILE ../../diskemu.v2/software/diskemu/mem_init/diskemu_mainmem.hex
+set_global_assignment -name VHDL_FILE ../SUBunit/SUBunitsDEMU2.vhd
+set_global_assignment -name VHDL_FILE ../S88DE0CVDEMU2.vhd
+set_global_assignment -name QIP_FILE ../Cyc5/pllCV.qip
+set_global_assignment -name VHDL_FILE ../Cyc5/pllCV.vhd -library pllCV
+set_global_assignment -name VHDL_FILE ../../I2C/I2C_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../I2C/I2CIF.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/susmult.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/ssmult.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/e8255.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/clktx.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/average.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/addsat.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/g_srff.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/HEX2SEG.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/signext.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/CRCGENN.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/sftdiv.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/sftgen.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/HEX2SEGn.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/sftclk.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/PARITYG.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/PARGEN.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/unchchata.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/delayer.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/digifilters.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/digifilter.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/deltasigmadac.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/clkdiv.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/intchk.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/susftmul.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/shiftadd.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/sftmul.vhd
+set_global_assignment -name VHDL_FILE ../../LIB/multi.vhd
+set_global_assignment -name VHDL_FILE ../../CPU/T80/T80.vhd
+set_global_assignment -name VHDL_FILE ../../CPU/T80/T80_ALU.vhd
+set_global_assignment -name VHDL_FILE ../../CPU/T80/T80_MCode.vhd
+set_global_assignment -name VHDL_FILE ../../CPU/T80/T80_Pack.vhd
+set_global_assignment -name VHDL_FILE ../../CPU/T80/T80_Reg.vhd
+set_global_assignment -name VHDL_FILE ../../CPU/T80/T80a.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/FDCs.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/FDC_sectinfo.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/FDC_timing.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/fmdem.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/fmmod.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/headseek.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/mfmdem.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/mfmmod.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/dc2ry.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/nrdet.vhd
+set_global_assignment -name VHDL_FILE ../../FDC/MTsave.vhd
+set_global_assignment -name VHDL_FILE ../EDIDmon.vhd
+set_global_assignment -name VHDL_FILE ../PS2KB/KBTBLE0.vhd
+set_global_assignment -name VHDL_FILE ../PS2KB/KBTBLN.vhd
+set_global_assignment -name VHDL_FILE ../PS2KB/KBIF.vhd
+set_global_assignment -name VHDL_FILE ../PS2KB/KBIO.vhd
+set_global_assignment -name VHDL_FILE ../PS2KB/KBMAP.vhd
+set_global_assignment -name QIP_FILE ../PS2KB/KBIO.qip
+set_global_assignment -name QIP_FILE ../PS2KB/KBTBLN.qip
+set_global_assignment -name QIP_FILE ../PS2KB/KBTBLE0.qip
+set_global_assignment -name HEX_FILE ../PS2KB/kbtbln.hex
+set_global_assignment -name HEX_FILE ../PS2KB/kbtble0.hex
+set_global_assignment -name VHDL_FILE ../../VIDEO/CRTCP.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/synccont2.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/synccont.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/textscr.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/video_timing_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/VTIMING.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/TRAMCONV.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/GraphALU.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/GRAPHSCR.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/CRTCREGS.vhd
+set_global_assignment -name QIP_FILE ../../VIDEO/graphbuf.qip
+set_global_assignment -name VHDL_FILE ../../VIDEO/DBGLINE.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/textscr2.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/HDMI/tmds_enc.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/HDMI/EDIDread.vhd
+set_global_assignment -name VHDL_FILE ../../VIDEO/HDMI/EDID_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../HDMI/LVDStrans.vhd
+set_global_assignment -name QIP_FILE ../../HDMI/LVDStrans.qip
+set_global_assignment -name QIP_FILE ../../HDMI/hdmipll.qip
+set_global_assignment -name SOURCE_FILE ../../HDMI/hdmipll.cmp
+set_global_assignment -name VHDL_FILE ../../HDMI/hdmiconv.vhd
+set_global_assignment -name VHDL_FILE ../../USART/e8251.vhd
+set_global_assignment -name VHDL_FILE ../../USART/rxframe.vhd
+set_global_assignment -name VHDL_FILE ../../USART/txframe.vhd
+set_global_assignment -name VHDL_FILE ../../SPI/SPI_IF.vhd
+set_global_assignment -name QIP_FILE ../TEXTRAM.qip
+set_global_assignment -name QIP_FILE ../Font/fontrom.qip
+set_global_assignment -name VHDL_FILE ../Font/fontrom.vhd
+set_global_assignment -name VHDL_FILE ../Font/fgraphrom.vhd
+set_global_assignment -name QIP_FILE ../Font/fgraphrom.qip
+set_global_assignment -name VHDL_FILE ../IO_RD.vhd
+set_global_assignment -name VHDL_FILE ../IO_WR.vhd
+set_global_assignment -name VHDL_FILE ../IO_RW.vhd
+set_global_assignment -name VHDL_FILE ../IO_RDB.vhd
+set_global_assignment -name VHDL_FILE ../IO_WRB.vhd
+set_global_assignment -name VHDL_FILE ../SUBunit/mmapsub.vhd
+set_global_assignment -name VHDL_FILE ../SUBunit/INTSUB.vhd
+set_global_assignment -name VHDL_FILE ../SUBunit/subrom.vhd
+set_global_assignment -name VHDL_FILE ../../sound/AY38910.vhd
+set_global_assignment -name VHDL_FILE ../../sound/beeposc.vhd
+set_global_assignment -name VHDL_FILE ../../sound/cosnrom.vhd
+set_global_assignment -name VHDL_FILE ../../sound/mult16.vhd
+set_global_assignment -name VHDL_FILE ../../sound/sinnrom.vhd
+set_global_assignment -name VHDL_FILE ../../sound/sintbl.vhd
+set_global_assignment -name VHDL_FILE ../../sound/sinwrom.vhd
+set_global_assignment -name MIF_FILE ../../sound/sinw.mif
+set_global_assignment -name MIF_FILE ../../sound/sinn.mif
+set_global_assignment -name MIF_FILE ../../sound/cosn.mif
+set_global_assignment -name MIF_FILE ../../sound/b7lev.mif
+set_global_assignment -name VHDL_FILE ../../sound/b7lev.vhd
+set_global_assignment -name QIP_FILE ../../sound/b7lev.qip
+set_global_assignment -name SOURCE_FILE ../../sound/b7lev.cmp
+set_global_assignment -name VHDL_FILE ../../sound/OPN/OPN.vhd
+set_global_assignment -name VHDL_FILE ../../sound/OPN/OPNA.vhd
+set_global_assignment -name VHDL_FILE ../../sound/OPN/OPNFM.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/OPNREG.qip
+set_global_assignment -name VHDL_FILE ../../sound/OPN/OPNREG.vhd
+set_global_assignment -name VHDL_FILE ../../sound/OPN/TLtbl.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/ram16x32.qip
+set_global_assignment -name VHDL_FILE ../../sound/OPN/ram16x32.vhd
+set_global_assignment -name VHDL_FILE ../../sound/OPN/FMreg.vhd
+set_global_assignment -name MIF_FILE ../../sound/OPN/RHYTHM/20RIM.mif
+set_global_assignment -name MIF_FILE ../../sound/OPN/RHYTHM/10TOM.mif
+set_global_assignment -name MIF_FILE ../../sound/OPN/RHYTHM/08HH.mif
+set_global_assignment -name MIF_FILE ../../sound/OPN/RHYTHM/04TOP.mif
+set_global_assignment -name MIF_FILE ../../sound/OPN/RHYTHM/02SD.mif
+set_global_assignment -name MIF_FILE ../../sound/OPN/RHYTHM/01BD.mif
+set_global_assignment -name VHDL_FILE ../../sound/OPN/RHYTHM/ROM_20RIM.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/RHYTHM/ROM_20RIM.qip
+set_global_assignment -name SOURCE_FILE ../../sound/OPN/RHYTHM/ROM_20RIM.cmp
+set_global_assignment -name VHDL_FILE ../../sound/OPN/RHYTHM/ROM_10TOM.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/RHYTHM/ROM_10TOM.qip
+set_global_assignment -name SOURCE_FILE ../../sound/OPN/RHYTHM/ROM_10TOM.cmp
+set_global_assignment -name VHDL_FILE ../../sound/OPN/RHYTHM/ROM_08HH.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/RHYTHM/ROM_08HH.qip
+set_global_assignment -name SOURCE_FILE ../../sound/OPN/RHYTHM/ROM_08HH.cmp
+set_global_assignment -name VHDL_FILE ../../sound/OPN/RHYTHM/ROM_04TOP.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/RHYTHM/ROM_04TOP.qip
+set_global_assignment -name SOURCE_FILE ../../sound/OPN/RHYTHM/ROM_04TOP.cmp
+set_global_assignment -name VHDL_FILE ../../sound/OPN/RHYTHM/ROM_02SD.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/RHYTHM/ROM_02SD.qip
+set_global_assignment -name SOURCE_FILE ../../sound/OPN/RHYTHM/ROM_02SD.cmp
+set_global_assignment -name VHDL_FILE ../../sound/OPN/RHYTHM/ROM_01BD.vhd
+set_global_assignment -name QIP_FILE ../../sound/OPN/RHYTHM/ROM_01BD.qip
+set_global_assignment -name SOURCE_FILE ../../sound/OPN/RHYTHM/ROM_01BD.cmp
+set_global_assignment -name VHDL_FILE ../../sound/OPN/RHYTHM/OPNARHYTHM.vhd
+set_global_assignment -name VHDL_FILE ../../sound/OPNAADPCM/PCMTIMING.vhd
+set_global_assignment -name VHDL_FILE ../../sound/OPNAADPCM/CALCOPNAADPCM_sft.vhd
+set_global_assignment -name VHDL_FILE ../../sound/OPNAADPCM/OPNAADPCM.vhd
+set_global_assignment -name VHDL_FILE ../../sound/FMcommon/TLtbl.vhd
+set_global_assignment -name QIP_FILE ../../sound/FMcommon/TLtbl.qip
+set_global_assignment -name VHDL_FILE ../../sound/FMcommon/muls16xu16.vhd
+set_global_assignment -name VHDL_FILE ../../sound/FMcommon/MUL16x17.vhd
+set_global_assignment -name VHDL_FILE ../../sound/FMcommon/FMreg.vhd
+set_global_assignment -name VHDL_FILE ../../sound/FMcommon/envtest.vhd
+set_global_assignment -name VHDL_FILE ../../sound/FMcommon/envelope_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../sound/FMcommon/envcont.vhd
+set_global_assignment -name VHDL_FILE ../../sound/noisegen.vhd
+set_global_assignment -name VHDL_FILE ../../RTC/rtc1990.vhd
+set_global_assignment -name VHDL_FILE ../../RTC/rtcbody.vhd
+set_global_assignment -name VHDL_FILE ../../rtc/rtc4990.vhd
+set_global_assignment -name VHDL_FILE ../../rtc/I2Crtc.vhd
+set_global_assignment -name VHDL_FILE ../FDtiming.vhd
+set_global_assignment -name VHDL_FILE ../FECcont.vhd
+set_global_assignment -name VHDL_FILE ../INTCONTS.vhd
+set_global_assignment -name VHDL_FILE ../IO_WRS.vhd
+set_global_assignment -name VHDL_FILE ../IO_RWS.vhd
+set_global_assignment -name VHDL_FILE ../IO_DETAC.vhd
+set_global_assignment -name VHDL_FILE ../KANJIROM.vhd
+set_global_assignment -name VHDL_FILE ../memorymaps.vhd
+set_global_assignment -name VHDL_FILE ../rampalette.vhd
+set_global_assignment -name VHDL_FILE ../palette.vhd
+set_global_assignment -name VHDL_FILE ../RAMCLR.vhd
+set_global_assignment -name VHDL_FILE ../sdramcde0cvDEMU2.vhd
+set_global_assignment -name VHDL_FILE ../TDMAREGS.vhd
+set_global_assignment -name VHDL_FILE ../trammaps.vhd
+set_global_assignment -name VHDL_FILE ../CMT/cmtmod.vhd
+set_global_assignment -name VHDL_FILE ../CMT/cmtdem.vhd
+set_global_assignment -name VHDL_FILE ../Cyc5/romcopy.vhd
+set_global_assignment -name VHDL_FILE ../Cyc5/asmicont.vhd
+set_global_assignment -name QIP_FILE ../Cyc5/pllCVdemu.qip
+set_global_assignment -name SIP_FILE ../Cyc5/pllCVdemu.sip
 set_global_assignment -name SIGNALTAP_FILE cpumon.stp
-set_global_assignment -name QIP_FILE Font/fontram.qip
-set_global_assignment -name SEARCH_PATH CMT/ -tag from_archive
-set_global_assignment -name SEARCH_PATH CPU/T80/ -tag from_archive
-set_global_assignment -name SEARCH_PATH Cyc5/ -tag from_archive
-set_global_assignment -name SEARCH_PATH Cyc5/pllCV/ -tag from_archive
-set_global_assignment -name SEARCH_PATH Cyc5/pllCVdemu/ -tag from_archive
-set_global_assignment -name SEARCH_PATH Cyc5/pllCVdemu_sim/ -tag from_archive
-set_global_assignment -name SEARCH_PATH Doc/ -tag from_archive
-set_global_assignment -name SEARCH_PATH FDC/ -tag from_archive
-set_global_assignment -name SEARCH_PATH Font/ -tag from_archive
-set_global_assignment -name SEARCH_PATH HDMI/ -tag from_archive
-set_global_assignment -name SEARCH_PATH HDMI/hdmipll/ -tag from_archive
-set_global_assignment -name SEARCH_PATH I2C/ -tag from_archive
-set_global_assignment -name SEARCH_PATH LIB/ -tag from_archive
-set_global_assignment -name SEARCH_PATH PS2KB/ -tag from_archive
-set_global_assignment -name SEARCH_PATH RTC/ -tag from_archive
-set_global_assignment -name SEARCH_PATH SPI/ -tag from_archive
-set_global_assignment -name SEARCH_PATH SUBunit/ -tag from_archive
-set_global_assignment -name SEARCH_PATH USART/ -tag from_archive
-set_global_assignment -name SEARCH_PATH VIDEO/ -tag from_archive
-set_global_assignment -name SEARCH_PATH VIDEO/HDMI/ -tag from_archive
-set_global_assignment -name SEARCH_PATH db/ip/diskemu/ -tag from_archive
-set_global_assignment -name SEARCH_PATH db/ip/diskemu/submodules/ -tag from_archive
-set_global_assignment -name SEARCH_PATH diskemu.v2/ -tag from_archive
-set_global_assignment -name SEARCH_PATH diskemu.v2/doc/ -tag from_archive
-set_global_assignment -name SEARCH_PATH diskemu.v2/software/diskemu/mem_init/ -tag from_archive
-set_global_assignment -name SEARCH_PATH rtc/ -tag from_archive
-set_global_assignment -name SEARCH_PATH sound/ -tag from_archive
-set_global_assignment -name SEARCH_PATH sound/FMcommon/ -tag from_archive
-set_global_assignment -name SEARCH_PATH sound/OPN/ -tag from_archive
-set_global_assignment -name SEARCH_PATH sound/OPN/RHYTHM/ -tag from_archive
-set_global_assignment -name SEARCH_PATH sound/OPNAADPCM/ -tag from_archive
+set_global_assignment -name QIP_FILE ../Font/fontram.qip
+
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
